@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "Name":"Andrew Schemer",
+    "Post":"Product Designer",
+    "src": "/src/assets/images/Team/team-1.jpg"
+  },
+  {
+    "id": 2,
+    "Name":"Osma Sma",
+    "Post":"UI UX Designer",
+    "src": "/src/assets/images/Team/team-2.jpg"
+  },
+  {
+    "id": 3,
+    "Name":"Dianne Russell",
+    "Post":"Nursing Assistant",
+    "src": "/src/assets/images/Team/team-3.jpg"
+  },
+  {
+    "id": 4,
+    "Name":"Dianne Russell",
+    "Post":"Web Designer",
+    "src": "/src/assets/images/Team/team-4.jpg"
+  }
+]

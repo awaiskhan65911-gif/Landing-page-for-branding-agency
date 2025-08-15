@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "Discription": "We create memorable brands that connect and stand out",
+    "src": "/src/assets/images/News/news-1.jpg",
+    "Tag":["Marketing","Creative","Agency","branding"]
+  },
+  {
+    "id": 2,
+    "Discription": "From logos to full strategies, we shape your vision into identity",
+    "src": "/src/assets/images/News/news-2.jpg",
+    "Tag":["Marketing","Creative","Agency","branding"]
+  },
+  {
+    "id": 3,
+    "Discription": "We design brands that inspire trust and long-term growth.",
+    "src": "/src/assets/images/News/news-3.jpg",
+    "Tag":["Marketing","Creative","Agency","branding"]
+  }
+]
