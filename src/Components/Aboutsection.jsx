@@ -2,9 +2,9 @@ import { Button } from "./Buttons/Button";
 
 export const About = (primaryBtn) => {
     const aboutimages = [
-        "public/images/About/about-1.jpg",
-        "public/images/About/about-2.jpg",
-        "public/images/About/about-3.jpg",
+        "/images/About/about-1.jpg",
+        "/images/About/about-2.jpg",
+        "/images/About/about-3.jpg",
     ]
     
     const zOrder = ['z-20', 'z-10', 'z-0'];
