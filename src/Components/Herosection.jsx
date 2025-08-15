@@ -48,13 +48,13 @@ export const Herosection = (primaryBtn) => {
                 <div className="mb-7 p-0.5 gradient-color rounded-t-full w-56 rounded-b-full text-white">
                     <ul className="bg-bodycolor flex rounded-t-full rounded-b-full relative">
                         <li className=" relative  -mr-4 rounded-full">
-                            <img className="border-4 border-bodycolor rounded-full"  src="/images/client/clients-1.png" alt="client" />
+                            <img className="border-4 border-bodycolor rounded-full"  src="/images/Client/clients-1.png" alt="client" />
                         </li>
                         <li className=" relative  -mr-4 rounded-full">
-                            <img className="border-4 border-bodycolor rounded-full" src="/images/client/clients-2.png" alt="client" />
+                            <img className="border-4 border-bodycolor rounded-full" src="/images/Client/clients-2.png" alt="client" />
                         </li>
                         <li className="relative  -mr-4 rounded-full">
-                            <img className="border-4 border-bodycolor rounded-full" src="/images/client/clients-3.png" alt="client" />
+                            <img className="border-4 border-bodycolor rounded-full" src="/images/Client/clients-3.png" alt="client" />
                         </li>
                         <li className="w-[68px] h-[68px] gradient-color rounded-full border-bodycolor border-4 relative inline-flex items-center justify-center text-sm font-bold text-white">
                             10K +
