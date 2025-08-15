@@ -1,1 +1,1 @@
-# THis is my landing for branding Agency.
+# This is my landing for branding Agency.
