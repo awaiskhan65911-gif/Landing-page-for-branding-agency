@@ -32,7 +32,7 @@ export const Nav = () => {
                 <div>
                     <div className="items-center">
                         <a href="/">
-                            <img src="/src/assets/images/Logo/logo-4.png" alt="logo" />
+                            <img src="/images/Logo/logo-4.png" alt="logo" />
                         </a>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ export const Nav = () => {
                 <RxCross1 color="white" size={20} className="absolute right-2 top-2 cursor-pointer" onClick={handleclosemanu} />
                 <div className="px-14 pt-6 pb-24">
                     <a href="/">
-                        <img src="/src/assets/images/Logo/logo.png" alt="logo" />
+                        <img src="/images/Logo/logo.png" alt="logo" />
                     </a>
                 </div>
                 <div className="text-white px-6 w-full uppercase tracking-wide">

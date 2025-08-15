@@ -39,7 +39,7 @@ const Settings = {
     }
     return (
         <section className="relative ">
-            <div className="bg-[url('/src/assets/images/Shapes/shape-7.png')] bg-cover bg-center bg-no-repeat w-full h-full z-0 left-0 right-0 absolute"></div>
+            <div className="bg-[url('/images/Shapes/shape-7.png')] bg-cover bg-center bg-no-repeat w-full h-full z-0 left-0 right-0 absolute"></div>
             <div className="text-white relative">
                 <div className="text-center md:text-start">
                     <div className="mb-6">

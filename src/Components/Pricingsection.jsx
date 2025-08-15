@@ -28,7 +28,7 @@ export const Pricing = () => {
                         const Icon = iconMap[icon];
                         return (
                             <div  key={id} className="bg-[#fff] w-full lg:w-[45%]  rounded-3xl group relative ">
-                                <div className="bg-[url('/src/assets/images/Shapes/shape-8.png')] bg-cover bg-no-repeat bg-center absolute inset-0 z-0"></div>
+                                <div className="bg-[url('/images/Shapes/shape-8.png')] bg-cover bg-no-repeat bg-center absolute inset-0 z-0"></div>
                                 <div className="absolute  rounded-3xl inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-r from-colorTheme z-10"></div>
                                 <div className="relative  flex flex-col justify-center items-center p-4 z-20 gap-6 py-8">
                                     <div className="my-6 bg-[#fff] group-hover:bg-opacity-25 rounded-full p-6">

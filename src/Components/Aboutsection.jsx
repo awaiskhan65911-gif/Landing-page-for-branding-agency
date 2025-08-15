@@ -2,9 +2,9 @@ import { Button } from "./Buttons/Button";
 
 export const About = (primaryBtn) => {
     const aboutimages = [
-        "/src//assets/images/About/about-1.jpg",
-        "/src//assets/images/About/about-2.jpg",
-        "/src//assets/images/About/about-3.jpg",
+        "public/images/About/about-1.jpg",
+        "public/images/About/about-2.jpg",
+        "public/images/About/about-3.jpg",
     ]
     
     const zOrder = ['z-20', 'z-10', 'z-0'];
@@ -33,8 +33,8 @@ export const About = (primaryBtn) => {
             </div>
             <div className=" relative flex items-center justify-start h-4/5 w-4/5 lg:h-full lg:w-full xl:h-full  rounded-lg mr-10 md:mr-20">
             <div className="z-[25] absolute -top-6 w-40 h-40 hidden sm:flex sm:flex-col items-center ">
-                <div className="bg-[url('/src/assets/images/Shapes/shape-4.png')] text-center bg-no-repeat bg-cover w-40 h-40  rounded-full border-bodycolor border-[5px] border-solid p-4 absolute -z-10"></div>
-                <div className="bg-[url('/src/assets/images/Shapes/shape-5.png')] absolute bg-no-repeat h-16 w-32 bottom-3 left-4">
+                <div className="bg-[url('/images/Shapes/shape-4.png')] text-center bg-no-repeat bg-cover w-40 h-40  rounded-full border-bodycolor border-[5px] border-solid p-4 absolute -z-10"></div>
+                <div className="bg-[url('/images/Shapes/shape-5.png')] absolute bg-no-repeat h-16 w-32 bottom-3 left-4">
                 </div>
                 <div className="absolute  left-5 top-8 text-center">
                  <p className="pt-2 text-sm">

@@ -3,32 +3,32 @@
     "id": 1,
     "Name":"Sam Millia",
     "Post":"Founder & CEO",
-    "src": "/src/assets/images/Feedback/clients-4.png",
-    "src2": "/src/assets/images/Feedback/clients-6.png",
+    "src": "public/images/Feedback/clients-4.png",
+    "src2": "public/images/Feedback/clients-6.png",
     "Discription": "I can't say enough about it. Thanks for the great service. It's the perfect solution for our business. You've saved our business!"
   },
   {
     "id": 2,
     "Name":"Olivia Mia",
     "Post":"Founder & CEO",
-    "src": "/src/assets/images/Feedback/clients-5.png",
-    "src2":"/src/assets/images/Feedback/clients-7.png",
+    "src": "/images/Feedback/clients-5.png",
+    "src2":"/images/Feedback/clients-7.png",
     "Discription": "I can't say enough about it. Thanks for the great service. It's the perfect solution for our business. You've saved our business!"
   },
   {
     "id": 3,
     "Name":"Sam Millia",
     "Post":"Founder & CEO",
-    "src": "/src/assets/images/Feedback/clients-4.png",
-    "src2":"/src/assets/images/Feedback/clients-6.png",
+    "src": "/images/Feedback/clients-4.png",
+    "src2":"/images/Feedback/clients-6.png",
     "Discription": "I can't say enough about it. Thanks for the great service. It's the perfect solution for our business. You've saved our business!"
   },
   {
     "id": 3,
     "Name":"Olivia Mia",
     "Post":"Founder & CEO",
-    "src": "/src/assets/images/Feedback/clients-5.png",
-    "src2":"/src/assets/images/Feedback/clients-7.png",
+    "src": "/images/Feedback/clients-5.png",
+    "src2":"/images/Feedback/clients-7.png",
     "Discription": "I can't say enough about it. Thanks for the great service. It's the perfect solution for our business. You've saved our business!"
   }
 ]

@@ -10,7 +10,7 @@ export const Faq = () =>{
    }
     return(
         <section className="relative ">
-            <div className="absolute bg-[url('/src/assets/images/Shapes/shape-16.png')] bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full z-0"></div>
+            <div className="absolute bg-[url('public/images/Shapes/shape-16.png')] bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full z-0"></div>
               <div className="mb-7 flex flex-col  lg:flex-row justify-around items-center gap-6 relative">
                 <div className="flex flex-col">
                     <div className="text-white my-20">
@@ -40,7 +40,7 @@ export const Faq = () =>{
                     } )}
                     </div>
                 </div>
-                <div className="relative"><img src="src/assets/images/Faq/faq-1.jpg" alt="" className="object-cover rounded-xl" /></div>
+                <div className="relative"><img src="public/images/Faq/faq-1.jpg" alt="" className="object-cover rounded-xl" /></div>
                 </div>
         </section>
     )

@@ -7,11 +7,11 @@ export const Herosection = (primaryBtn) => {
 
 
     const images = [
-        "/src/assets/images/slider/slider-1.jpg",
-        "/src/assets/images/slider/slider-2.jpg",
-        "/src/assets/images/slider/slider-3.jpg",
-        "/src/assets/images/slider/slider-2.jpg",
-        "/src/assets/images/slider/slider-1.jpg",
+        "public/images/slider/slider-1.jpg",
+        "public/images/slider/slider-2.jpg",
+        "public/images/slider/slider-3.jpg",
+        "public/images/slider/slider-2.jpg",
+        "public/images/slider/slider-1.jpg",
     ]
     const sliderSettings = {
         dots: true,
@@ -30,10 +30,10 @@ export const Herosection = (primaryBtn) => {
     };
     return (
         <section className="relative   flex items-center justify-center px-10 pb-10 md:px-20  pt-60">
-        <div className="absolute inset-0 bg-[url('/src/assets/images/Shapes/shape-1.png')] bg-cover bg-center bg-no-repeat w-full h-full z-0" />
+        <div className="absolute inset-0 bg-[url('public/images/Shapes/shape-1.png')] bg-cover bg-center bg-no-repeat w-full h-full z-0" />
             <div className="relative flex flex-col justify-center items-center w-full z-10">
                 <div className="text-white flex flex-col items-center text-center">
-                    <div className="bg-[url(/src/assets/images/Shapes/shape-2.png)] bg-no-repeat absolute h-80 w-56 left-44 top-56 hidden lg:block">
+                    <div className="bg-[url(/images/Shapes/shape-2.png)] bg-no-repeat absolute h-80 w-56 left-44 top-56 hidden lg:block">
                     </div>
                     <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[80px] mb-6 font-Outfit font-bold">
                         {"Rediscover the Art of "}<br /> <span className="gradient-text">Branding</span>
@@ -48,13 +48,13 @@ export const Herosection = (primaryBtn) => {
                 <div className="mb-7 p-0.5 gradient-color rounded-t-full w-56 rounded-b-full text-white">
                     <ul className="bg-bodycolor flex rounded-t-full rounded-b-full relative">
                         <li className=" relative  -mr-4 rounded-full">
-                            <img className="border-4 border-bodycolor rounded-full"  src="/src/assets/images/client/clients-1.png" alt="client" />
+                            <img className="border-4 border-bodycolor rounded-full"  src="public/images/client/clients-1.png" alt="client" />
                         </li>
                         <li className=" relative  -mr-4 rounded-full">
-                            <img className="border-4 border-bodycolor rounded-full" src="/src/assets/images/client/clients-2.png" alt="client" />
+                            <img className="border-4 border-bodycolor rounded-full" src="public/images/client/clients-2.png" alt="client" />
                         </li>
                         <li className="relative  -mr-4 rounded-full">
-                            <img className="border-4 border-bodycolor rounded-full" src="/src/assets/images/client/clients-3.png" alt="client" />
+                            <img className="border-4 border-bodycolor rounded-full" src="public/images/client/clients-3.png" alt="client" />
                         </li>
                         <li className="w-[68px] h-[68px] gradient-color rounded-full border-bodycolor border-4 relative inline-flex items-center justify-center text-sm font-bold text-white">
                             10K +

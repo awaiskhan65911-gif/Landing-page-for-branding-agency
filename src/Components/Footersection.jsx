@@ -9,15 +9,15 @@ export const Footer = () => {
     const [{title}] = Footerdata
     return (
         <section className="relative ">
-            <div className="absolute bg-[url('/src/assets/images/Shapes/shape-25.png')] bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full -z-10"></div>
+            <div className="absolute bg-[url('/images/Shapes/shape-25.png')] bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full -z-10"></div>
             <div className="relative">
                 <div className="flex flex-col lg:flex-row gap-3 relative mb-10">
                 <div className="text-[#fff] mr-8 w-full lg:w-5/12">
                     <div className="p-10 relative">
-                    <div className="absolute left-0 top-0 bg-[url('/src/assets/images/Shapes/shape-26.png')] bg-center bg-no-repeat bg-cover  h-full w-full -z-10 rounded-3xl mb-6">
+                    <div className="absolute left-0 top-0 bg-[url('/images/Shapes/shape-26.png')] bg-center bg-no-repeat bg-cover  h-full w-full -z-10 rounded-3xl mb-6">
                     </div>
                             <div className="mb-6 cursor-pointer">
-                                <img src="/src/assets/images/Logo/logo.png" alt="img" />
+                                <img src="/images/Logo/logo.png" alt="img" />
                             </div>
                             <p className="mb-6 text-font">But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated.</p>
                             <h6 className="mb-6 text-font">
@@ -33,7 +33,7 @@ export const Footer = () => {
                 </div>
                 <div className="w-full  lg:w-[60%] relative">
                     <div className="grid grid-cols-1  sm:grid-cols-2 sm:grid-rows-1 gap-10  lg:grid-cols-3 lg:grid-rows-1   items-start relative p-10 overflow-hidden text-[#b0b0b0]">
-                    <div className="bg-[url('/src/assets/images/Shapes/shape-26.png')] bg-center bg-no-repeat
+                    <div className="bg-[url('/images/Shapes/shape-26.png')] bg-center bg-no-repeat
                     bg-cover  h-full rounded-3xl w-full absoute top-0 right-0 -z-10 absolute">
                         </div>
                             <div className="footer-li">

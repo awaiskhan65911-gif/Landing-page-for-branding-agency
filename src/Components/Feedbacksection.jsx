@@ -26,9 +26,9 @@ export const Feedback = () => {
 
     return(
         <section className="relative">
-            <div className="bg-[url('/src/assets/images/Shapes/shape-11.png')] z-0 absolute bg-no-repeat bg-center bg-cover inset-0">
+            <div className="bg-[url('public/images/Shapes/shape-11.png')] z-0 absolute bg-no-repeat bg-center bg-cover inset-0">
             </div>
-            <div className="bg-[url('/src/assets/images/Shapes/shape-14.png')] z-10 absolute bg-no-repeat bg-center left-0 w-full md:w-[737px] h-full opacity-75"></div>
+            <div className="bg-[url('public/images/Shapes/shape-14.png')] z-10 absolute bg-no-repeat bg-center left-0 w-full md:w-[737px] h-full opacity-75"></div>
             <div className="relative z-20  ">
             <div className="mb-7">
                 <div className="text-white">
@@ -47,9 +47,9 @@ export const Feedback = () => {
                 {feedback.map(({id,Name,Post,Discription,src,src2})=>{
                     return(
                         <div key={id} className="flex  items-center justify-center relative p-4 md:px-8 group cursor-move">
-                    <div className="bg-[url('/src/assets/images/Shapes/shape-12.png')] feedback-slider group-hover:opacity-0">
+                    <div className="bg-[url('public/images/Shapes/shape-12.png')] feedback-slider group-hover:opacity-0">
                     </div>
-                    <div className="bg-[url('/src/assets/images/Shapes/shape-13.png')] feedback-slider opacity-0 group-hover:opacity-100">
+                    <div className="bg-[url('public/images/Shapes/shape-13.png')] feedback-slider opacity-0 group-hover:opacity-100">
                     </div>
                     <div className="flex flex-col items-center justify-center">
                     <div className="mb-6 relative inline-block">

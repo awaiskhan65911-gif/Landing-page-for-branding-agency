@@ -15,7 +15,7 @@ export const CTA = (primaryBtn,className) =>{
                     </div>
                 </div>
                 <div className="hidden md:block">
-                    <img src="/src/assets/images/Icons/loud-1.png" alt="img" />
+                    <img src="public/images/Icons/loud-1.png" alt="img" />
                 </div>
             </div>
 

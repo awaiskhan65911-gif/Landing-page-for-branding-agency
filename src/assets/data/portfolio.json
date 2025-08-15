@@ -2,21 +2,21 @@
 {
     "id": 1,
     "Title": "D-form Business strategy",
-    "src": "/src/assets/images/Portfolio/portfolio-1.jpg"
+    "src": "/images/Portfolio/portfolio-1.jpg"
   },
   {
     "id": 2,
     "Title": "Mark Wide Marketing strategy",
-    "src":"/src/assets/images/Portfolio/portfolio-2.jpg"
+    "src":"/images/Portfolio/portfolio-2.jpg"
   },
   {
     "id": 3,
     "Title": "Decorator Hard Carpet",
-    "src":"/src/assets/images/Portfolio/portfolio-3.jpg"  
+    "src":"/images/Portfolio/portfolio-3.jpg"  
   }, 
   {
     "id": 4,
     "Title": "White-line Face beauty",
-    "src":"/src/assets/images/Portfolio/portfolio-4.jpg"
+    "src":"/images/Portfolio/portfolio-4.jpg"
   }    
 ]
