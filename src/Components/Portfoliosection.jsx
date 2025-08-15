@@ -1,5 +1,5 @@
 import { MdOutlineChevronRight } from "react-icons/md"
-import portfolio from "../assets/data/Portfolio.json"
+import portfoliodata from "../assets/data/Portfolio.json"
 export const Portfolio = () => {
     return (
         <section className="relative ">
@@ -15,7 +15,7 @@ export const Portfolio = () => {
                     <div className="text-white  opacity-50 max-w-2xl"><p className="text-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ratione aspernatur quae illum alias. Distinctio qui sed quia dolorum velit dolorem voluptatibus, quis modi, neque autem veniam provident? Tempora, optio.</p></div>
                 </div>
                 <div className="mt-8  flex flex-wrap items-center justify-center basis-auto gap-3">
-                    {portfolio.map(({Title,src,id})=>{
+                    {portfoliodata.map(({Title,src,id})=>{
                         return(<div key={id} className={`border-[1px]  border-[#333333] border-solid  rounded-3xl grow ${id === 1 || id === 4 ? 'w-full md:w-[38%]':'w-full md:w-[53%]'} `}>
                         <div className="p-8 border-b-[1px] border-[#333333] border-solid">
                             <h3 className="text-white text-xl font-bold"> <a href="/">{Title}</a></h3>
