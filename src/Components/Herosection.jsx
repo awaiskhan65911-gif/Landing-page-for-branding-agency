@@ -7,11 +7,11 @@ export const Herosection = (primaryBtn) => {
 
 
     const images = [
-        "public/images/slider/slider-1.jpg",
-        "public/images/slider/slider-2.jpg",
-        "public/images/slider/slider-3.jpg",
-        "public/images/slider/slider-2.jpg",
-        "public/images/slider/slider-1.jpg",
+        "/images/slider/slider-1.jpg",
+        "/images/slider/slider-2.jpg",
+        "/images/slider/slider-3.jpg",
+        "/images/slider/slider-2.jpg",
+        "/images/slider/slider-1.jpg",
     ]
     const sliderSettings = {
         dots: true,
@@ -30,7 +30,7 @@ export const Herosection = (primaryBtn) => {
     };
     return (
         <section className="relative   flex items-center justify-center px-10 pb-10 md:px-20  pt-60">
-        <div className="absolute inset-0 bg-[url('public/images/Shapes/shape-1.png')] bg-cover bg-center bg-no-repeat w-full h-full z-0" />
+        <div className="absolute inset-0 bg-[url('/images/Shapes/shape-1.png')] bg-cover bg-center bg-no-repeat w-full h-full z-0" />
             <div className="relative flex flex-col justify-center items-center w-full z-10">
                 <div className="text-white flex flex-col items-center text-center">
                     <div className="bg-[url(/images/Shapes/shape-2.png)] bg-no-repeat absolute h-80 w-56 left-44 top-56 hidden lg:block">
