@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Button } from "./Buttons/Button";
 
-export const Herosection = (primaryBtn) => {
+export const Herosection = (variant) => {
 
 
     const images = [
@@ -42,7 +42,7 @@ export const Herosection = (primaryBtn) => {
                     <p className="mb-6 opacity-55 text-xl text-font ">Creating products with a strong identity. We provide brilliant ideas and <br /> adding the world called success brand. </p>
                 </div>
                 <div className="mb-20">
-                <Button primaryBtn={primaryBtn}  >Discover more</Button>
+                <Button variant={variant}  >Discover more</Button>
                 </div>
                 <div className="flex flex-col items-center justify-center w-full">
                 <div className="mb-7 p-0.5 gradient-color rounded-t-full w-56 rounded-b-full text-white">

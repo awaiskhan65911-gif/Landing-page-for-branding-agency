@@ -28,7 +28,7 @@ export const Feedback = () => {
         <section className="relative">
             <div className="bg-[url('/images/Shapes/shape-11.png')] z-0 absolute bg-no-repeat bg-center bg-cover inset-0">
             </div>
-            <div className="bg-[url('/images/Shapes/shape-14.png')] z-10 absolute bg-no-repeat bg-center left-0 w-full md:w-[737px] h-full opacity-75"></div>
+            <div className="bg-[url('/images/Shapes/shape-14.png')] z-10 absolute bg-no-repeat bg-center left-0 top-0 w-full md:w-[737px] h-full opacity-75"></div>
             <div className="relative z-20  ">
             <div className="mb-7">
                 <div className="text-white">

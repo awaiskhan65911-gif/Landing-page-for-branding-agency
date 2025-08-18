@@ -1,5 +1,5 @@
 import { Button } from "./Buttons/Button"
-export const CTA = (primaryBtn,className) =>{
+export const CTA = (variant,className) =>{
     return(
         <section className="relative">
             <div className="absolute bg-[url('/images/Shapes/shape-24.png')] bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full -z-10"></div>
@@ -10,7 +10,7 @@ export const CTA = (primaryBtn,className) =>{
                     <p className="mb-8 text-font">Your Laboratory Instruments Should Serve you. Not the other way <br />around. We’re happy to help you.</p>
                     <div className="flex-none flex flex-col md:flex md:flex-row gap-2">
                         <Button className='w-[160px]'>Lets Talk</Button>
-                        <Button primaryBtn={primaryBtn}
+                        <Button variant={variant}
                         className='w-[160px]'>Book now</Button>
                     </div>
                 </div>

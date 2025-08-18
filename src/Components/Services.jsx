@@ -8,7 +8,7 @@ import { GoShieldCheck } from "react-icons/go"
 import Slider from "react-slick"
 
 
-export const Services = (primaryBtn) => {
+export const Services = (variant) => {
     const iconMap = {
   IoFileTrayOutline: IoFileTrayOutline,
   BsGraphUpArrow: BsGraphUpArrow,
@@ -54,7 +54,7 @@ const Settings = {
                         </h2>
                     </div>
                     <div className="mb-20">
-                    <Button primaryBtn={primaryBtn} className='text-sm'>See All Services</Button>
+                    <Button variant={variant} className='text-sm'>See All Services</Button>
                     </div>
                 </div>
                 <div>

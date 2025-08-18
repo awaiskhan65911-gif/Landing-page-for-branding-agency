@@ -1,6 +1,6 @@
 import { Button } from "./Buttons/Button";
 
-export const About = (primaryBtn) => {
+export const About = (variant) => {
     const aboutimages = [
         "/images/About/about-1.jpg",
         "/images/About/about-2.jpg",
@@ -27,7 +27,7 @@ export const About = (primaryBtn) => {
                     <p className="text-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, cupiditate voluptate repellendus iusto veritatis nesciunt, amet quae distinctio deserunt vero eos obcaecati quod libero temporibus! Earum, deserunt explicabo. Officia, aut.</p>
                 </div>
                 <div className="mb-10 lg:mb-20 flex">
-                <Button primaryBtn={primaryBtn}>Explore more</Button>
+                <Button variant={variant}>Explore more</Button>
                 </div>
                 </div>
             </div>

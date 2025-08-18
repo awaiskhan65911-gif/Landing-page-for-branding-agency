@@ -2,7 +2,7 @@ import news from '../assets/data/News.json'
 import { Button } from './Buttons/Button'
 
 
-export const News = (primaryBtn) => {
+export const News = (variant) => {
 
     const todaydate = new Date()
     const day = todaydate.toLocaleDateString("en-GB", { day: "2-digit" });
@@ -38,7 +38,7 @@ export const News = (primaryBtn) => {
                                     </ul>
                                     <h3 className='text-xl font-bold cursor-pointer text-font'>{Discription}</h3>
                                     <div className='mt-10'>
-                                        <Button primaryBtn={primaryBtn} >Read more</Button>
+                                        <Button variant={variant} >Read more</Button>
                                     </div>
                                 </div>
                             </div>
