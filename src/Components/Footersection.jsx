@@ -5,12 +5,12 @@ import { GrInstagram } from "react-icons/gr"
 import { MdOutlineFacebook, MdOutlineLocationOn } from "react-icons/md"
 import Footerdata from "../assets/data/Nav.json"
 
-export const Footer = () => {
+export const FooterSection = () => {
     const [{title}] = Footerdata
     return (
         <section className="relative ">
             <div className="absolute bg-[url('/images/Shapes/shape-25.png')] bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full -z-10"></div>
-            <div className="relative">
+            <div className="relative max-w-[1456px] mx-auto px-8">
                 <div className="flex flex-col lg:flex-row gap-3 relative mb-10">
                 <div className="text-[#fff] mr-8 w-full lg:w-5/12">
                     <div className="p-10 relative">
@@ -19,11 +19,11 @@ export const Footer = () => {
                             <div className="mb-6 cursor-pointer">
                                 <img src="/images/Logo/logo.png" alt="img" />
                             </div>
-                            <p className="mb-6 text-font">But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated.</p>
-                            <h6 className="mb-6 text-font">
+                            <p className="mb-8 text-font">But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated.</p>
+                            <h6 className="mb-8 text-font">
                                 Follow Us:
                             </h6>
-                            <ul className="flex gap-4 footer-icon">
+                            <ul className="flex gap-4 footer-icon mb-2">
                                 <li><a href="/"><MdOutlineFacebook/> </a></li>
                                 <li><a href="/"> <FaLinkedin /></a></li>
                                 <li><a href="/"><AiFillTwitterCircle /> </a></li>
@@ -34,7 +34,7 @@ export const Footer = () => {
                 <div className="w-full  lg:w-[60%] relative">
                     <div className="grid grid-cols-1  sm:grid-cols-2 sm:grid-rows-1 gap-10  lg:grid-cols-3 lg:grid-rows-1   items-start relative p-10 overflow-hidden text-[#b0b0b0]">
                     <div className="bg-[url('/images/Shapes/shape-26.png')] bg-center bg-no-repeat
-                    bg-cover  h-full rounded-3xl w-full absoute top-0 right-0 -z-10 absolute">
+                    bg-cover  h-full rounded-3xl w-full absoute top-0 right-0 -z-10 absolute ">
                         </div>
                             <div className="footer-li">
                                 <h5 className="font-bold mb-4 text-2xl text-[#fff] font-Outfit tracking-wider">Company</h5>
@@ -67,7 +67,7 @@ export const Footer = () => {
                         </div>
                 </div>
                 </div>
-                <hr className="border-0 h-[1px] gradient-color rounded-full"/>  
+                <hr className="border-0 h-[1px] gradient-color rounded-full opacity-20"/>  
                   <div className="py-10 flex flex-col  md:flex-row items-center justify-between text-[#b0b0b0]">
                     <p>
                         Copyright © 2025  by <a href="#" className="text-[#fff]">bplugins</a>

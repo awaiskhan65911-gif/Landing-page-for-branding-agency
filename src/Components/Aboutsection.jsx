@@ -1,6 +1,6 @@
 import { Button } from "./Buttons/Button";
 
-export const About = (variant) => {
+export const AboutSection = (variant) => {
     const aboutimages = [
         "/images/About/about-1.jpg",
         "/images/About/about-2.jpg",
@@ -9,8 +9,10 @@ export const About = (variant) => {
     
     const zOrder = ['z-20', 'z-10', 'z-0'];
     return (
-        <section className="text-[#fff]  flex-row lg:flex">
-            <div className="flex items-center justify-around">
+        <section >
+            <div className="text-[#fff]  flex-row lg:flex w-full max-w-[1456px] mx-auto px-8">
+
+            <div className="flex items-center justify-around lg:w-[50%] mr-[62px]">
                 <div className="flex flex-col w-full ">
                 <div className="mb-6">
                     <p className="text-gray-400 text-xl text-font">
@@ -24,14 +26,14 @@ export const About = (variant) => {
                     </h2>
                 </div>
                 <div className="mb-6">
-                    <p className="text-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, cupiditate voluptate repellendus iusto veritatis nesciunt, amet quae distinctio deserunt vero eos obcaecati quod libero temporibus! Earum, deserunt explicabo. Officia, aut.</p>
+                    <p className="text-font block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, cupiditate voluptate repellendus iusto veritatis nesciunt, amet quae distinctio deserunt vero eos obcaecati quod libero temporibus! Earum, deserunt explicabo. Officia, aut.</p>
                 </div>
                 <div className="mb-10 lg:mb-20 flex">
                 <Button variant={variant}>Explore more</Button>
                 </div>
                 </div>
             </div>
-            <div className=" relative flex items-center justify-start h-4/5 w-4/5 lg:h-full lg:w-full xl:h-full  rounded-lg mr-10 md:mr-20">
+            <div className=" relative flex items-center justify-start h-4/5 w-4/5 lg:h-full lg:w-[50%] rounded-lg mr-10 md:mr-20">
             <div className="z-[25] absolute -top-6 w-40 h-40 hidden sm:flex sm:flex-col items-center ">
                 <div className="bg-[url('/images/Shapes/shape-4.png')] text-center bg-no-repeat bg-cover w-40 h-40  rounded-full border-bodycolor border-[5px] border-solid p-4 absolute -z-10"></div>
                 <div className="bg-[url('/images/Shapes/shape-5.png')] absolute bg-no-repeat h-16 w-32 bottom-3 left-4">
@@ -44,11 +46,13 @@ export const About = (variant) => {
                 </div>
                     </div> 
                 {aboutimages.map((src,index) => (
-                <div className={`-mr-16  lg:-mr-20 relative   ${zOrder[index]}`} key={index}>
+                    <div className={`-mr-16  lg:-mr-20 relative   ${zOrder[index]}`} key={index}>
                     <img className="object-cover border-black border-[5px] border-solid rounded-t-full rounded-b-full" src={src} alt="img" />
                 </div>
                 ))}
             </div>
+                </div>
+            
         </section>
     )
 }

@@ -1,14 +1,14 @@
-import { Footer } from "./Components/Footersection";
-import { Nav } from "./Components/Nav";
+import {  FooterSection } from "./Components/Footersection";
+import { NavSection } from "./Components/NavSection";
 import { Home } from "./Pages/Home";
 
 
  const App = () =>{
   return(
     <>
-    <Nav />
+    <NavSection />
     <Home/>
-    <Footer/>
+    <FooterSection/>
     </>
   )
 }

@@ -1,32 +1,32 @@
-import { About } from "../Components/Aboutsection"
-import { CTA } from "../Components/CTAsection"
-import { Faq } from "../Components/Faqsection"
-import { Feedback } from "../Components/Feedbacksection"
-import { Herosection } from "../Components/Herosection"
-import { Intro } from "../Components/Introsection"
-import { News } from "../Components/Newssection"
-import { Portfolio } from "../Components/Portfoliosection"
-import { Pricing } from "../Components/Pricingsection"
-import { Process } from "../Components/ProcessSection"
+import { AboutSection } from "../Components/AboutSection"
+import { CtaSection } from "../Components/CTASection"
+import { FaqSection } from "../Components/FaqSection"
+import { FeedbackSection } from "../Components/FeedbackSection"
+import { HeroSection } from "../Components/HeroSection"
+import { IntroSection } from "../Components/IntroSection"
+import { NewsSection } from "../Components/NewsSection"
+import { PortfolioSection } from "../Components/PortfolioSection"
+import {  PricingSection } from "../Components/PricingSection"
+import { ProcessSection } from "../Components/ProcessSection"
 import { Progressbar } from "../Components/Progressbar"
-import { Services } from "../Components/Services"
-import { Team } from "../Components/Teamsection"
+import { ServicesSection } from "../Components/ServicesSection"
+import {  TeamSection } from "../Components/TeamSection"
 
 export const Home = () =>{
     return(
         <>
-        <Herosection/>
-        <About/>
-        <Intro/>
-        <Services/>
-        <Portfolio/>
-        <Process/>
-        <Feedback/>
-        <Pricing/>
-        <Faq/>
-        <Team/>
-        <News/>
-        <CTA/>
+        <HeroSection/>
+        <AboutSection/>
+        <IntroSection/>
+        <ServicesSection/>
+        <PortfolioSection/>
+        <ProcessSection/>
+        <FeedbackSection />
+        <PricingSection/>
+        <FaqSection/>
+        <TeamSection/>
+        <NewsSection/>
+        <CtaSection/>
         <Progressbar/>
         </>
     )

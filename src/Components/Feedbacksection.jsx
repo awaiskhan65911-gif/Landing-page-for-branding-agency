@@ -1,7 +1,7 @@
 import Slider from "react-slick"
 import feedback from "../assets/data/Feedback.json"
 
-export const Feedback = () => {
+export const FeedbackSection = () => {
 
     const Settings = {
         dots: false,
@@ -9,7 +9,7 @@ export const Feedback = () => {
         speed: 1000,
         slidesToShow: 2,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         arrows: false,
         pauseOnHover: true,
@@ -26,6 +26,8 @@ export const Feedback = () => {
 
     return(
         <section className="relative">
+            <div className="max-w-[1456px] mx-auto px-8">
+
             <div className="bg-[url('/images/Shapes/shape-11.png')] z-0 absolute bg-no-repeat bg-center bg-cover inset-0">
             </div>
             <div className="bg-[url('/images/Shapes/shape-14.png')] z-10 absolute bg-no-repeat bg-center left-0 top-0 w-full md:w-[737px] h-full opacity-75"></div>
@@ -46,20 +48,22 @@ export const Feedback = () => {
                 <Slider {...Settings}>
                 {feedback.map(({id,Name,Post,Discription,src,src2})=>{
                     return(
-                        <div key={id} className="flex  items-center justify-center relative p-4 md:px-8 group cursor-move">
-                    <div className="bg-[url('/images/Shapes/shape-12.png')] feedback-slider group-hover:opacity-0">
+                        <div key={id} className="flex  items-center justify-center relative p-4 group cursor-move rounded-3xl shadow-lg ">
+                    <div className="bg-[url('/images/Shapes/shape-12.png')] bg-cover h-full w-full bg-no-repeat bg-center rounded-[32px] left-0 top-0 transition-opacity duration-300 group-hover:opacity-0 absolute ">
                     </div>
-                    <div className="bg-[url('/images/Shapes/shape-13.png')] feedback-slider opacity-0 group-hover:opacity-100">
+                    <div className="bg-[url('/images/Shapes/shape-13.png')] transition-opacity duration-300 opacity-0 group-hover:opacity-100  bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full absolute  rounded-[32px]">
                     </div>
-                    <div className="flex flex-col items-center justify-center">
-                    <div className="mb-6 relative inline-block">
-                        <img src={src} alt="img" />
+                    <div className="flex flex-col items-center justify-center overflow-hidden">
+                    <div className="mb-6 relative inline-block min-h-[33px] ">
+                        <img src={src} alt="img" className="w-full" />
                     </div>
                     <p className="text-[#b5b5b5] text-lg md:text-xl lg:text-2xl relative text-center mt-6 max-w-xl leading-relaxed text-font">
                         {Discription}
                     </p>
                     <div className="relative text-[#fff] flex mt-8 items-center justify-center gap-4">
-                        <img src={src2} alt="img" className="w-12 h-12 object-cover rounded-full" />
+                        <div className="w-[73px] h-[73px]">
+                        <img src={src2} alt="img" className="w-full object-cover rounded-full" />
+                        </div>
                         <div className="flex flex-col">
                             <h3 className="font-Outfit  text-lg">{Name}</h3>
                             <span className="text-sm text-[#b0b0b0] text-font">{Post}</span>
@@ -71,6 +75,7 @@ export const Feedback = () => {
                 </Slider>
             </div>
 
+            </div>
         </section>
     )
 }
