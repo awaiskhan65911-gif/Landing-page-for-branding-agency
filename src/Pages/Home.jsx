@@ -1,8 +1,8 @@
 import { AboutSection } from "../Components/AboutSection"
-import { CtaSection } from "../Components/CTASection"
+import { CTASection } from "../Components/CTAsection"
 import { FaqSection } from "../Components/FaqSection"
 import { FeedbackSection } from "../Components/FeedbackSection"
-import { HeroSection } from "../Components/HeroSection"
+import { HeroSection } from "../Components/Herosection"
 import { IntroSection } from "../Components/IntroSection"
 import { NewsSection } from "../Components/NewsSection"
 import { PortfolioSection } from "../Components/PortfolioSection"
@@ -26,7 +26,7 @@ export const Home = () =>{
         <FaqSection/>
         <TeamSection/>
         <NewsSection/>
-        <CtaSection/>
+        <CTASection/>
         <Progressbar/>
         </>
     )

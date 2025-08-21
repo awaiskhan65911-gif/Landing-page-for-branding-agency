@@ -1,5 +1,5 @@
 import { Button } from "./Buttons/Button"
-export const CtaSection = (variant,className) =>{
+export const CTASection = (variant,className) =>{
     return(
         <section className="relative">
             <div className="absolute bg-[url('/images/Shapes/shape-24.png')] bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full -z-10"></div>
