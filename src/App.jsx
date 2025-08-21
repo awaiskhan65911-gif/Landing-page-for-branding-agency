@@ -1,4 +1,4 @@
-import {  FooterSection } from "./Components/Footersection";
+import {  FooterSection } from "./Components/FooterSection";
 import { NavSection } from "./Components/NavSection";
 import { Home } from "./Pages/Home";
 
