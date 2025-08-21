@@ -1,5 +1,5 @@
 import { AboutSection } from "../Components/AboutSection"
-import { CTASection } from "../Components/CTAsection"
+import { CTASection } from "../Components/CTASection"
 import { FaqSection } from "../Components/FaqSection"
 import { FeedbackSection } from "../Components/FeedbackSection"
 import { HeroSection } from "../Components/Herosection"
