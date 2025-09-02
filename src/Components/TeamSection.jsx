@@ -48,11 +48,11 @@ export const TeamSection = () => {
                                         <h3 className='text-[#fff] font-ambit text-[22px] leading-[22px] mb-[11px] font-[700] group-hover:text-[#181e25] hover:underline'>{Name}</h3>
                                         <span className='font-ambit relative block text-[15px] leading-[23px] text-[#b5b5b5] group-hover:text-[#545454]'>{Post}</span>
                                     </div>
-                                    <div className=''>
-                                        <div className='w-[36px] h-[36px] bg-[#181e25] rounded-full relative flex items-center justify-center'>
+                                    <div className='group/dropdown'>
+                                        <div className=' w-[36px] h-[36px] bg-[#181e25] rounded-full relative flex items-center justify-center '>
                                         <FaPlus size={20}   className='text-[#fff] ' />
                                         </div>
-                                        <ul className="bg-[url('/images/Shapes/shape-18.png')] w-[60px]  bg-cover bg-center bg-no-repeat absolute  p-3 flex flex-col items-center justify-center gap-4 bottom-5 right-[12px] opacity-0  translate-y-2   hover:opacity-100 hover:scale-100 hover:translate-y-0 transition-all duration-500 ease-in-out z-20  cursor-pointer text-[#464b51]">
+                                        <ul className="bg-[url('/images/Shapes/shape-18.png')] w-[60px]  bg-cover bg-center bg-no-repeat absolute  p-3 flex flex-col items-center justify-center gap-4 bottom-5 right-[12px] opacity-0 scale-y-0 origin-bottom group-hover/dropdown:opacity-100 group-hover/dropdown:visiable group-hover/dropdown:scale-y-[1]  transition-all duration-500 ease-in-out z-20 group-hover/dropdown:pointer-events-auto cursor-pointer pointer-events-none text-[#464b51]">
                                             <li className='relative block mb-[12px]'><MdOutlineFacebook size={25} /></li>
                                             <li className='relative block mb-[12px]'><FaLinkedin size={25} /></li>
                                             <li className='relative block mb-[12px]'><AiFillTwitterCircle size={25} /></li>
