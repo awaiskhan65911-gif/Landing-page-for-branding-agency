@@ -44,7 +44,7 @@ export const ServicesSection = (variant) => {
                         </Button>
                     </div>
                 </div>
-                <div className="relative mr-[-670px] overflow-hidden">
+                <div className="relative md:mr-[-670px] overflow-hidden">
                     <Swiper
                         modules={[Pagination, Autoplay, Navigation]}
                         navigation={{
@@ -52,7 +52,7 @@ export const ServicesSection = (variant) => {
                             prevEl: ".custom-prev",
                         }}
                         spaceBetween={0}
-                        slidesPerView={2}
+                        slidesPerView={1}
                         loop={true}
                         autoplay={{
                             delay: 4000,
@@ -61,14 +61,17 @@ export const ServicesSection = (variant) => {
                         }}
                         speed={1000}
                         breakpoints={{
-                            700: {
-                                slidesPerView: 2
+                            700:{
+                                slidesPerView:2
+                            },
+                            768: {
+                                slidesPerView: 1
                             },
                             899: {
-                                slidesPerView: 2
+                                slidesPerView: 3
                             },
                             1350: {
-                                slidesPerView: 3
+                                slidesPerView: 4
                             },
                         }}
                         onBreakpoint={(swiper, breakpointParams) => {
@@ -84,7 +87,7 @@ export const ServicesSection = (variant) => {
                             const Icon = iconMap[icon];
                             return (
                                 <SwiperSlide key={id}>
-                                    <div className="relative block h-full p-[40px] rounded-[32px] overflow-hidden shadow-lg group mr-[30px] bg-slidercolor z-30">
+                                    <div className="relative block h-full p-[40px] rounded-[32px] overflow-hidden shadow-lg group mx-[12px] md:mr-[30px] bg-slidercolor z-30">
                                         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-linear SliderGradient scale-90 group-hover:scale-150 "></div>
                                         <div className="bg-[url('/images/Shapes/shape-6.png')] bg-cover bg-no-repeat bg-center left-0 top-0 w-full h-full"></div>
                                         <div className="relative ">
