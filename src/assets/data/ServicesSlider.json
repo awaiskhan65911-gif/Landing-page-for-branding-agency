@@ -2,25 +2,49 @@
 {
     "id": 1,
     "Title": "Development",
-    "Discripton": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and pain.",
+    "Discripton": "Etiam Sed odio dictum, tempus velit non, sollicitudin nutoeque. Donec quis aliquet velit.",
     "icon": "IoFileTrayOutline"
   },
   {
     "id": 2,
     "Title": "Marketing",
-    "Discripton": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and pain.",
+    "Discripton": "Etiam Sed odio dictum, tempus velit non, sollicitudin nutoeque. Donec quis aliquet velit.",
     "icon": "BsGraphUpArrow"
   },
   {
     "id": 3,
     "Title": "Planning",
-    "Discripton": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and pain.",
+    "Discripton": "Etiam Sed odio dictum, tempus velit non, sollicitudin nutoeque. Donec quis aliquet velit.",
     "icon": "BiBulb"
   }, 
   {
     "id": 4,
     "Title": "Branding",
-    "Discripton": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and pain.",
+    "Discripton": "Etiam Sed odio dictum, tempus velit non, sollicitudin nutoeque. Donec quis aliquet velit.",
     "icon": "GoShieldCheck"
-  }    
+  }, 
+  {
+    "id": 5,
+    "Title": "Development",
+    "Discripton": "Etiam Sed odio dictum, tempus velit non, sollicitudin nutoeque. Donec quis aliquet velit.",
+    "icon": "IoFileTrayOutline"
+  },
+  {
+    "id": 6,
+    "Title": "Marketing",
+    "Discripton": "Etiam Sed odio dictum, tempus velit non, sollicitudin nutoeque. Donec quis aliquet velit.",
+    "icon": "BsGraphUpArrow"
+  },
+  {
+    "id": 7,
+    "Title": "Planning",
+    "Discripton": "Etiam Sed odio dictum, tempus velit non, sollicitudin nutoeque. Donec quis aliquet velit.",
+    "icon": "BiBulb"
+  }, 
+  {
+    "id": 8,
+    "Title": "Branding",
+    "Discripton": "Etiam Sed odio dictum, tempus velit non, sollicitudin nutoeque. Donec quis aliquet velit.",
+    "icon": "GoShieldCheck"
+  }  
 ]

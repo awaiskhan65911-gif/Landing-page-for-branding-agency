@@ -1,12 +1,12 @@
 [
 {
     "id": 1,
-    "Title": "D-form Business strategy",
+    "Title": "D-Form Business Strategy",
     "src": "/images/Portfolio/portfolio-1.jpg"
   },
   {
     "id": 2,
-    "Title": "Mark Wide Marketing strategy",
+    "Title": "Mark Wide Marketing Strategy",
     "src":"/images/Portfolio/portfolio-2.jpg"
   },
   {
@@ -16,7 +16,7 @@
   }, 
   {
     "id": 4,
-    "Title": "White-line Face beauty",
+    "Title": "White-line Face Beauty",
     "src":"/images/Portfolio/portfolio-4.jpg"
   }    
 ]

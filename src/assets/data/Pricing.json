@@ -3,7 +3,7 @@
     "id": 1,
     "Title": "Basic Plan",
     "Discription":"Similique sunt in culpa qui officia deserunt molli fuga Et harum possimus.",
-    "Price":"$23",
+    "Price":"$29",
     "icon": "HiMiniSquare3Stack3D"
   },
   {
@@ -17,7 +17,7 @@
     "id": 3,
     "Title": "Enterprise",
     "Discription":"Similique sunt in culpa qui officia deserunt molli fuga Et harum possimus.",
-    "Price":"$29",
+    "Price":"$23",
     "icon": "IoBulbOutline"
   }    
 ]

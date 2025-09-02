@@ -1,7 +1,7 @@
 import { IoIosArrowUp } from "react-icons/io"
 import { useEffect, useState } from "react"
 
-export const Progressbar = () => {
+export const ProgressBar = () => {
     const [scrollProgress, setScrollProgress] = useState(0)
     useEffect(()=>{
 
@@ -28,9 +28,9 @@ export const Progressbar = () => {
     return (
             <div
             onClick={handletotop}
-            style={progressStyle} className="rounded-full w-[50px] h-[50px] flex bg-[#fff] items-center justify-center bottom-4 right-12 fixed z-30 ">
-                <div className="bg-bodycolor  rounded-full w-11 h-11 flex items-center justify-center">
-                <IoIosArrowUp size={25} className="text-[#fff]"/>
+            style={progressStyle} className="rounded-full  w-[50px] h-[50px] bg-[#fff]  bottom-[30px] right-[30px] fixed z-30  flex items-center justify-center">
+                 <div className="flex items-center justify-center bg-bodycolor  rounded-full  w-[46px] h-[46px]">
+                <IoIosArrowUp size={20} className="text-[#fff]"/>
                 </div>
             </div>
     )

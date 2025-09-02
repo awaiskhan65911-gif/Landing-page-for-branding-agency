@@ -20,47 +20,63 @@ export const ServicesSection = (variant) => {
         GoShieldCheck: GoShieldCheck,
     };
 
+
+
     return (
-        <section className="relative pt-14">
-            <div className="max-w-[1456px] mx-auto px-8 ">
-            <div className="bg-[url('/images/Shapes/shape-7.png')] bg-cover bg-center bg-no-repeat w-full h-[1598px] left-0 right-0 absolute z-[0]"></div>
-            <div className="text-white relative z-20">
-                <div className="text-start lg:flex block items-center justify-between ">
-                    <div className="mb-6">
-                        <h3 className="text-2xl opacity-50 text-font">Brand Services</h3>
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
-                            <span className="gradient-text">We Create To Brands And</span>
+        <section className="relative pt-[70px] pb-[40px] md:pt-[120px] md:pb-[90px] overflow-visible bg-[#181e25]">
+            <div className="bg-[url('/images/Shapes/shape-7.png')] bg-cover bg-no-repeat w-full h-[1598px] left-0 top-0 absolute z-[1] pointer-events-none"></div>
+            <div className="w-full max-w-[1350px] mx-auto px-[15px] relative">
+                <div className="text-start lg:flex block items-center justify-between mb-[60px] relative">
+                    <div className="relative block mb-[30px] lg:mb-0">
+                        <h3 className="relative block text-[24px] leading-[36px] font-[400] mb-[24px] text-font text-[#b5b5b5]">Brand Services</h3>
+                        <h2 className="text-[#fff] text-[34px] md:text-[50px] leading-[42px] md:leading-[58px] font-[550] font-ambit">
+                            <span className="bg-[linear-gradient(90deg,#4bb6ef_16.75%,#dd933e_50.1%,#dd933e_50.1%,#d82e5a_138.04%)] bg-clip-text text-transparent">We Create To Brands And</span>
                             <br />
-                            <span className="gradient-text">Businesses</span>
+                            <span className="bg-[linear-gradient(90deg,#4bb6ef_16.75%,#dd933e_130.1%)] bg-clip-text text-transparent">Businesses</span>
                             {" To Stand Our in"}
                             <br />
                             {" the Digital era"}
                         </h2>
                     </div>
-                    <div className="mb-20">
+                    <div className="">
                         <Button variant={variant} className="text-sm">
                             See All Services
                         </Button>
                     </div>
                 </div>
+                <div className="relative mr-[-670px] overflow-hidden">
                     <Swiper
                         modules={[Pagination, Autoplay, Navigation]}
                         navigation={{
                             nextEl: ".custom-next",
                             prevEl: ".custom-prev",
                         }}
-                        spaceBetween={30}
-                        slidesPerView={1}
+                        spaceBetween={0}
+                        slidesPerView={2}
+                        loop={true}
                         autoplay={{
-                            delay: 100,
+                            delay: 4000,
                             disableOnInteraction: false,
                             stopOnLastSlide: true,
                         }}
-                        speed={2000}
+                        speed={1000}
                         breakpoints={{
-
-                            688: { slidesPerView: 2 },
-                            1500: { slidesPerView: 3 },
+                            700: {
+                                slidesPerView: 2
+                            },
+                            899: {
+                                slidesPerView: 2
+                            },
+                            1350: {
+                                slidesPerView: 3
+                            },
+                        }}
+                        onBreakpoint={(swiper, breakpointParams) => {
+                            if (window.innerWidth >= 1450) {
+                                swiper.params.speed = 0;   // 🚀 disable animation
+                            } else {
+                                swiper.params.speed = 1000; // default animation
+                            }
                         }}
                         className="mySwiper"
                     >
@@ -68,19 +84,19 @@ export const ServicesSection = (variant) => {
                             const Icon = iconMap[icon];
                             return (
                                 <SwiperSlide key={id}>
-                                    <div className="relative  h-full p-8 rounded-2xl overflow-hidden shadow-lg group">
-                                        <div className="absolute inset-0 bg-slidercolor"></div>
-                                        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-linear SliderGradient scale-90 group-hover:scale-150"></div>
-                                        <div className="relative z-10 text-white">
-                                            {Icon && <Icon className="my-4" size={40} />}
-                                            <h2 className="text-3xl my-4">{Title}</h2>
-                                            <p className="text-font">{Discripton}</p>
+                                    <div className="relative block h-full p-[40px] rounded-[32px] overflow-hidden shadow-lg group mr-[30px] bg-slidercolor z-30">
+                                        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-linear SliderGradient scale-90 group-hover:scale-150 "></div>
+                                        <div className="bg-[url('/images/Shapes/shape-6.png')] bg-cover bg-no-repeat bg-center left-0 top-0 w-full h-full"></div>
+                                        <div className="relative ">
+                                            {Icon && <Icon className="mb-[29px] text-[#fff]" size={40} />}
+                                            <h2 className="text-[30px] inline-block text-[#fff] leading-[36px] font-[500] mb-[16px]">{Title}</h2>
+                                            <p className="text-font text-[#b0b0b0] group-hover:text-[#e6e6e6] mb-[41px]">{Discripton}</p>
                                             <div className="my-4">
                                                 <a
                                                     href="/"
                                                     className="inline-block text-white text-center rounded-lg border-b-2 border-transparent hover:border-white transition-all duration-300 ease-in-out"
                                                 >
-                                                    <span className="mr-1 text-font">View more details</span>
+                                                    <span className="pl-[5px] font-ambit">View Details</span>
                                                     <MdOutlineChevronRight
                                                         size={30}
                                                         className="inline-block"
@@ -93,32 +109,33 @@ export const ServicesSection = (variant) => {
                             );
                         })}
                     </Swiper>
-                
-                <div className="relative mx-auto pt-5 flex justify-end gap-4">
+                </div>
+
+                <div className="relative  mx-auto pt-[30px] flex justify-end">
                     {/* Prev Button */}
-                    <div className="custom-prev group relative cursor-pointer h-[50px] w-[50px] rounded-full shadow-md p-[1px]">
+                    <div className="custom-prev bg-[#1c2228] group relative cursor-pointer h-[60px] w-[60px] rounded-full shadow-md p-[1px] mr-[19px]">
                         {/* Gradient border (hover effect) */}
                         <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 gradient-color transition-all duration-300 z-0"></div>
 
                         {/* Icon with background */}
-                        <div className="flex items-center justify-center bg-bodycolor rounded-full h-full w-full relative z-10">
+                        <div className="flex items-center text-[#b0b0b0] justify-center bg-[#1c2228] rounded-full h-full w-full relative z-30">
                             <MdOutlineKeyboardDoubleArrowLeft size={24} />
                         </div>
                     </div>
 
                     {/* Next Button */}
-                    <div className="custom-next group relative cursor-pointer h-[50px] w-[50px] rounded-full shadow-md p-[1px]">
+                    <div className="custom-next group relative cursor-pointer h-[60px] w-[60px] rounded-full shadow-md p-[1px] ">
                         {/* Gradient border (hover effect) */}
                         <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 gradient-color transition-all duration-300 z-0"></div>
 
                         {/* Icon with background */}
-                        <div className="flex items-center justify-center bg-bodycolor rounded-full h-full w-full relative z-10">
+                        <div className="flex items-center text-[#b0b0b0] justify-center bg-[#1c2228] rounded-full h-full w-full relative z-30">
                             <MdOutlineKeyboardDoubleArrowRight size={24} />
                         </div>
                     </div>
                 </div>
+
             </div>
-        </div>
         </section >
     );
 };

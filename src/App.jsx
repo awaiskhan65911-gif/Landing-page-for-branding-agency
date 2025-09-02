@@ -6,9 +6,11 @@ import { Home } from "./Pages/Home";
  const App = () =>{
   return(
     <>
+    <div className="!overflow-hidden">
     <NavSection />
     <Home/>
     <FooterSection/>
+    </div>
     </>
   )
 }

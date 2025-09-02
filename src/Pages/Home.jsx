@@ -8,7 +8,7 @@ import { NewsSection } from "../Components/NewsSection"
 import { PortfolioSection } from "../Components/PortfolioSection"
 import {  PricingSection } from "../Components/PricingSection"
 import { ProcessSection } from "../Components/ProcessSection"
-import { Progressbar } from "../Components/Progressbar"
+import { ProgressBar } from "../Components/ProgressBar"
 import { ServicesSection } from "../Components/ServicesSection"
 import {  TeamSection } from "../Components/TeamSection"
 
@@ -27,7 +27,7 @@ export const Home = () =>{
         <TeamSection/>
         <NewsSection/>
         <CTASection/>
-        <Progressbar/>
+        <ProgressBar/>
         </>
     )
 }

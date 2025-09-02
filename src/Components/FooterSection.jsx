@@ -2,85 +2,126 @@ import { AiFillTwitterCircle } from "react-icons/ai"
 import { CiMail, CiPhone } from "react-icons/ci"
 import { FaLinkedin } from "react-icons/fa6"
 import { GrInstagram } from "react-icons/gr"
+import { HiOutlineLocationMarker } from "react-icons/hi"
 import { MdOutlineFacebook, MdOutlineLocationOn } from "react-icons/md"
-import Footerdata from "../assets/data/Nav.json"
 
 export const FooterSection = () => {
-    const [{title}] = Footerdata
+    const company = ["Home", "About Us", "Our Services", "Project & Portfolio", "Contact Us"]
+    const contact = [
+        {
+            icon: <HiOutlineLocationMarker />,
+            text: "235 Park Ave S, New York, NY 10010 United States",
+        },
+        {
+            icon: <CiMail />,
+            text: "Infobranding@gmail.com",
+        },
+        {
+            icon: <CiPhone />,
+            text: "000 (123) 456 789",
+        },
+    ];
+    const icons = [<MdOutlineFacebook />, <GrInstagram />, <FaLinkedin />, <AiFillTwitterCircle />]
+    const services = ["Consulting", "Community", "Brand Strategy", "Design", "Communication"]
     return (
-        <section className="relative ">
-            <div className="absolute bg-[url('/images/Shapes/shape-25.png')] bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full -z-10"></div>
-            <div className="relative max-w-[1456px] mx-auto px-8">
-                <div className="flex flex-col lg:flex-row gap-3 relative mb-10">
-                <div className="text-[#fff] mr-8 w-full lg:w-5/12">
-                    <div className="p-10 relative">
-                    <div className="absolute left-0 top-0 bg-[url('/images/Shapes/shape-26.png')] bg-center bg-no-repeat bg-cover  h-full w-full -z-10 rounded-3xl mb-6">
-                    </div>
-                            <div className="mb-6 cursor-pointer">
-                                <img src="/images/Logo/logo.png" alt="img" />
+        <section className="relative pt-[70px] md:pt-[120px]">
+            <div className="absolute bg-[url('/images/Shapes/shape-25.png')] bg-center bg-no-repeat left-0 top-0 w-full h-full -z-10"></div>
+            <div className="relative w-full max-w-[1350px] mx-auto px-[15px]">
+                <div className="flex flex-wrap lg:flex-nowrap -mx-[12px]  relative mb-[40px]">
+                    <div className="flex shrink-0 grow-0 basis-auto w-full lg:w-5/12 px-[12px]">
+                        <div className="relative pt-[40px] pl-[40px] pr-[35px] pb-[37px] rounded-[24px] overflow-hidden bg-[#212830] mb-[40px] lg:mb-0 lg:mr-[48px]">
+                            <div className="absolute left-0 top-0 bg-[url('/images/Shapes/shape-26.png')] bg-center bg-no-repeat bg-cover  h-full w-full z-0 ">
                             </div>
-                            <p className="mb-8 text-font">But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated.</p>
-                            <h6 className="mb-8 text-font">
+                            <div className="relative mb-[24px] cursor-pointer">
+                                <img src="/images/Logo/logo.png" alt="img" className="max-w-full h-auto inline-block" />
+                            </div>
+                            <p className="text-[15px] leading-[24px] font-ambit text-[#b0b0b0] mb-[24px] relative">But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated.</p>
+                            <h6 className="text-[#fff] block relative font-ambit text-[15px] leading-[17px] mb-[20px] font-[700]">
                                 Follow Us:
                             </h6>
-                            <ul className="flex gap-4 footer-icon mb-2">
-                                <li><a href="/"><MdOutlineFacebook/> </a></li>
-                                <li><a href="/"> <FaLinkedin /></a></li>
-                                <li><a href="/"><AiFillTwitterCircle /> </a></li>
-                                <li><a href="/"><GrInstagram /> </a></li>
+                            <ul className="relative flex items-center gap-x-[12px] text-[#b0b0b0]">
+                                {icons.map((items, index) => {
+                                    return (
+                                        <li key={index} className="relative inline-block"><a className="relative  w-[30px] h-[30px] leading-[30px] flex items-center justify-center border-[1px] border-solid border-[#95989B] rounded-full text-[12px]" href="">{items}</a></li>
+                                    )
+                                })}
                             </ul>
+                        </div>
                     </div>
-                </div>
-                <div className="w-full  lg:w-[60%] relative">
-                    <div className="grid grid-cols-1  sm:grid-cols-2 sm:grid-rows-1 gap-10  lg:grid-cols-3 lg:grid-rows-1   items-start relative p-10 overflow-hidden text-[#b0b0b0]">
-                    <div className="bg-[url('/images/Shapes/shape-26.png')] bg-center bg-no-repeat
-                    bg-cover  h-full rounded-3xl w-full absoute top-0 right-0 -z-10 absolute ">
-                        </div>
-                            <div className="footer-li">
-                                <h5 className="font-bold mb-4 text-2xl text-[#fff] font-Outfit tracking-wider">Company</h5>
-                                <ul className="flex flex-col gap-5 text-sm">
-                                    {title.map((items,index) => {
-                                        return(
-                                            <li key={index}>{items}</li>
-                                        )
-                                    })}
-                                </ul>
+                    <div className="flex flex-col shrink-0 grow-0 w-full lg:w-7/12 px-[12px]">
+                        <div className="relative bg-[#212830] rounded-[24px] overflow-hidden p-[35px]">
+                            <div className="bg-[url('/images/Shapes/shape-26.png')] bg-cover  h-full  w-full top-0 right-0 z-0 bg-no-repeat bg-center absolute ">
                             </div>
-                            <div className="footer-li">
-                                <h5 className="font-bold mb-4 text-2xl text-[#fff] font-Outfit tracking-wider">Our services</h5>
-                                <ul className="flex flex-col gap-4 text-sm">
-                                    <li >Consulting</li>
-                                    <li>Community</li>
-                                    <li>Brand Strategy</li>
-                                    <li>Design</li>
-                                    <li>Communication</li>
-                                </ul>
-                            </div>
-                            <div className="footer-li">
-                                <h5 className="font-bold mb-4 text-2xl text-[#fff] font-Outfit tracking-wider">Contact Info</h5>
-                                <ul className="flex flex-col gap-4 text-sm items-start justify-center ">
-                                    <li className="flex gap-1 items-center justify-center"><MdOutlineLocationOn size={27} /> <a href="/">235 Park Ave S, New York, NY 10010 United States</a></li>
-                                    <li className="flex gap-1 items-center justify-center"><CiMail size={25} /><a href="/">Infobranding@gmail.com</a></li>
-                                    <li className="flex gap-1 items-center justify-center"><CiPhone size={25} /><a href="/">000 (123) 456 789</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                </div>
-                </div>
-                <hr className="border-0 h-[1px] gradient-color rounded-full opacity-20"/>  
-                  <div className="py-10 flex flex-col  md:flex-row items-center justify-between text-[#b0b0b0]">
-                    <p>
-                        Copyright © 2025  by <a href="#" className="text-[#fff]">bplugins</a>
-                    </p>
-                    <div className="footer-bottom">
+                            <div className="flex flex-wrap lg:flex-nowrap">
+                                <div className="flex flex-col shrink-0  basis-auto w-full sm:w-[50%] md:w-2/6 px-[12px]">
+                                    <div>
+                                        <div className="relative block mb-[21px]">
+                                            <h3 className="text-[22px] leading-[29px] text-[#fff] font-ambit font-[700] ">Company</h3>
+                                        </div>
+                                        <ul className="flex flex-col">
+                                            {company.map((items, index) => {
+                                                return (
+                                                    <li key={index} className="relative block mb-[13px]"><a className="relative inline-block text-[15px] leading-[23px] text-[#b0b0b0] font-ambit" href="">{items}</a></li>
+                                                )
+                                            })}
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col shrink-0 grow-0 basis-auto w-full sm:w-[50%] md:w-2/6 px-[12px]">
+                                    <div>
 
-                    <ul className="flex items-center gap-12 ">
-                        <li>Teams Of Services</li>
-                        <li>Privacy Policy</li>
-                        <li>Cooke Policy</li>
-                    </ul>
+                                        <div className="mb-[21px] relative block">
+                                            <h5 className="text-[22px] leading-[29px] text-[#fff] font-ambit font-[700]">Our Services</h5>
+                                        </div>
+                                        <ul className="flex flex-col">
+                                            {services.map((items, index) => {
+                                                return (
+
+                                                    <li key={index} className="relative block mb-[13px]" ><a href="/" className="relative inline-block text-[15px] leading-[23px] text-[#b0b0b0] font-ambit">{items}</a></li>
+                                                )
+                                            })}
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col shrink-0 grow-0 basis-auto w-full sm:w-[50%] md:w-2/6 px-[12px]">
+                                    <div className="-ml-[20px]">
+                                        <div className="mb-[21px] relative block">
+                                            <h3 className="relative text-[22px] leading-[29px] text-[#fff] font-ambit font-[700]">Contact Info</h3>
+                                        </div>
+                                        <div className="">
+                                            <ul className="">
+                                                {contact.map((item, index) => (
+                                                    <li
+                                                        key={index}
+                                                        className="relative flex items-center  font-ambit text-[14px] leading-[23px] mb-[20px] gap-[10px] text-[#b0b0b0]"
+                                                    >
+                                                        <a href="/" className="relative  min-w-[22px] text-[22px]">{item.icon}</a>
+                                                        <span>{item.text}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>           
+                </div>
+                <hr className="border-0 h-[1px] gradient-color rounded-full opacity-20" />
+                <div className="relative w-full py-[30px] md:pt-[24px] md:pb-[100px]">
+                    <div className="relative block text-center md:flex md:flex-row items-center justify-between">
+                        <div className="mb-[15px] md:mb-0">
+                            <p className="text-[15px] leading-[23px] font-ambit text-[#b0b0b0] font-[400]">
+                                Copyright © 2025  by <a href="#" className="text-[#fff] inline-block">bplugins</a>
+                            </p>
+                        </div>
+                        <ul className="relative justify-center flex items-center md:justify-normal gap-[58px]">
+                            <li className="relative inline-block text-[#b0b0b0]">Teams Of Services</li>
+                            <li className="relative inline-block text-[#b0b0b0]">Privacy Policy</li>
+                            <li className="relative inline-block text-[#b0b0b0]">Cooke Policy</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     )

@@ -1,25 +1,25 @@
-import { FaPlusCircle } from 'react-icons/fa'
+import { FaPlus } from 'react-icons/fa'
 import team from '../assets/data/Team.json'
 import { MdOutlineFacebook } from 'react-icons/md'
-import { FaLinkedin } from 'react-icons/fa6'
+import {  FaLinkedin } from 'react-icons/fa6'
 import { AiFillTwitterCircle } from 'react-icons/ai'
 import { GrInstagram } from 'react-icons/gr'
 
 export const TeamSection = () => {
     return (
-        <section className="relative">
+        <section className="relative pt-[70px] pb-[40px] md:pt-[120px] md:pb-[90px]">
             <div className="absolute bg-[url('/images/Shapes/shape-19.png')] bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full -z-10"></div>
-            <div className="flex flex-col items-center w-full max-w-[1456px] mx-auto px-8">
-                <div className="text-white flex flex-col items-center justify-center relative mb-12">
-                    <h3 className="text-2xl mb-4 opacity-50 ">Our Team</h3>
-                    <h2 className="text-3xl md:text-4xl xl:text-6xl font-bold text-center">{"Empower You "}
-                        <br />
-                        <span className="gradient-text">
+            <div className=" relative w-full !text-center max-w-[1350px] mx-auto px-[15px]">
+                <div className="relative block mb-[78px]">
+                    <h3 className="relarive block font-ambit text-[24px] leading-[36px] text-[#b5b5b5] font-[400] mb-[24px]">Our Team</h3>
+                    <h2 className="relative text-[34px] text-[#fff] leading-[42px] md:text-[50px] md:leading-[58px] font-[400] font-ambit">{"Empower You "}
+                        <br className='hidden md:block' />
+                        <span className="gradient-text relative inline-block font-[700]">
                             Brand Agency Team Member
                         </span>
                     </h2>
                 </div>
-                <div className="w-full flex  flex-wrap justify-center items-center lg:flex-nowrap  lg:justify-between gap-4">
+                <div className="w-full flex  flex-wrap justify-center items-center lg:flex-nowrap  lg:justify-between gap-[24px]">
                     {team.map(({ id, Name, Post, src }) => {
                         return (
                             
@@ -39,21 +39,24 @@ export const TeamSection = () => {
                                     before:duration-500
                                     before:ease-in-out
                                 '>
-                                    <img src={src} alt="img" className="rounded-[32px] w-full h-full p-[2px]" />
+                                    <img src={src} alt="img" className="rounded-[32px] w-full h-full pt-[2px] px-[2px]" />
                                 </div>
-                                <div className="bg-[#161b2299] px-4 py-2 text-[#fff] hover:text-[#181e25] hover:bg-[#fff6] backdrop-blur-[20px] absolute  left-0 bottom-0 w-full rounded-b-3xl flex items-center justify-between transition-all duration-500">
-
-                                    <div className="bg-['url(/images/Shapes/shape-17.png')] inset-0 h-full  bg-cover bg-no-repeat bg-center left-0 top-0 -z-10">
-                                        <h3 className='font-Outfit text-xl Lg:text-2xl'>{Name}</h3>
-                                        <span className='text-sm text-font'>{Post}</span>
+                                <div className="bg-[#161b2299] px-[24px] py-[21.5px] text-[#fff]  group-hover:bg-[#fff6] backdrop-blur-[20px] absolute  left-0 bottom-0 w-full rounded-b-[32px] flex items-center justify-between transition-all duration-500 z-20">
+                                    <div className='text-start'>
+                                    <div className="bg-['url(/images/Shapes/shape-17.png')] h-full w-full  bg-cover bg-no-repeat bg-center left-0 top-0 absolute -z-10">
+                                    </div>
+                                        <h3 className='text-[#fff] font-ambit text-[22px] leading-[22px] mb-[11px] font-[700] group-hover:text-[#181e25] hover:underline'>{Name}</h3>
+                                        <span className='font-ambit relative block text-[15px] leading-[23px] text-[#b5b5b5] group-hover:text-[#545454]'>{Post}</span>
                                     </div>
                                     <div className=''>
-                                        <FaPlusCircle size={30} className='text-[#fff]' />
-                                        <ul className="bg-[url('/images/Shapes/shape-18.png')] bg-cover bg-center bg-no-repeat absolute  p-3 flex flex-col gap-4 bottom-5 right-2 opacity-0  translate-y-2   hover:opacity-100 hover:scale-100 hover:translate-y-0 transition-all duration-500 ease-in-out z-20  cursor-pointer ">
-                                            <li><MdOutlineFacebook size={25} /></li>
-                                            <li><FaLinkedin size={25} /></li>
-                                            <li><AiFillTwitterCircle size={25} /></li>
-                                            <li><GrInstagram size={25} /></li>
+                                        <div className='w-[36px] h-[36px] bg-[#181e25] rounded-full relative flex items-center justify-center'>
+                                        <FaPlus size={20}   className='text-[#fff] ' />
+                                        </div>
+                                        <ul className="bg-[url('/images/Shapes/shape-18.png')] w-[60px]  bg-cover bg-center bg-no-repeat absolute  p-3 flex flex-col items-center justify-center gap-4 bottom-5 right-[12px] opacity-0  translate-y-2   hover:opacity-100 hover:scale-100 hover:translate-y-0 transition-all duration-500 ease-in-out z-20  cursor-pointer text-[#464b51]">
+                                            <li className='relative block mb-[12px]'><MdOutlineFacebook size={25} /></li>
+                                            <li className='relative block mb-[12px]'><FaLinkedin size={25} /></li>
+                                            <li className='relative block mb-[12px]'><AiFillTwitterCircle size={25} /></li>
+                                            <li className='relative block mb-[12px]'><GrInstagram size={25} /></li>
                                         </ul>
                                     </div>
                                 </div>

@@ -6,57 +6,73 @@ export const AboutSection = (variant) => {
         "/images/About/about-2.jpg",
         "/images/About/about-3.jpg",
     ]
-    
+
     const zOrder = ['z-20', 'z-10', 'z-0'];
     return (
-        <section >
-            <div className="text-[#fff]  flex-row lg:flex w-full max-w-[1456px] mx-auto px-8">
+        <section className="pt-[70px] md:pt-[120px] pb-[60px]" >
+            <div className="text-[#fff]  flex-row !items-center justify-center lg:flex w-full max-w-[1456px] mx-auto px-[15px]">
 
-            <div className="flex items-center justify-around lg:w-[50%] mr-[62px]">
-                <div className="flex flex-col w-full ">
-                <div className="mb-6">
-                    <p className="text-gray-400 text-xl text-font">
-                        About us Branding Agency
-                    </p>
+                <div className="flex  w-full lg:w-[50%] mb-[30px] lg:mb-0 lg:pr-[12px] shrink-0 grow-0 basis-auto box-border">
+                    <div className="flex flex-col w-full lg:mr-[50px]">
+                        <div className="mb-6">
+                            <p className="text-[#b5b5b5] text-[24px] leading-[36px] text-font ">
+                                About us Branding Agency
+                            </p>
+                        </div>
+                        <div className="mb-6">
+                            <h2 className="font-ambit  font-[400] leading-[42px] text-[34px] md:text-[50px] md:leading-[58px] ">
+                                We Provide Brilliant ideas and adding the <span className="bg-[linear-gradient(90deg,#dd933e_50.1%,#d82e5a_138.04%)] bg-clip-text text-transparent font-[700]">World called</span> <br />
+                                <span className="bg-[linear-gradient(90deg,#4bb6ef_16.75%,#dd933e_50.1%,#dd933e_50.1%,#d82e5a_138.04%)] bg-clip-text text-transparent font-[700]"> success to your brand.</span>
+                            </h2>
+                        </div>
+                        <div className="mb-[40px] max-w-[640px] font-[400]">
+                            <p className="font-Inter relative font-[400] block tracking-wider text-[#b5b5b5]">Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+
+                        </div>
+                        <div className=" flex">
+                            <Button variant={variant}>Explore Details</Button>
+                        </div>
+                    </div>
                 </div>
-                <div className="mb-6">
-                    <h2 className="text-4xl md:text-5xl lg:text-5xl xl:text-5xl">
-                        We Provide brilliant ideas and adding the <span className="gradient-text">World called</span> <br />
-                        <span className="gradient-text"> success to your brand.</span>
-                    </h2>
-                </div>
-                <div className="mb-6">
-                    <p className="text-font block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, cupiditate voluptate repellendus iusto veritatis nesciunt, amet quae distinctio deserunt vero eos obcaecati quod libero temporibus! Earum, deserunt explicabo. Officia, aut.</p>
-                </div>
-                <div className="mb-10 lg:mb-20 flex">
-                <Button variant={variant}>Explore more</Button>
-                </div>
+                <div className="flex  w-full  lg:w-[50%] basis-auto shrink-0 grow-0 pr-[15px] lg:pl-[12px] box-border">
+                    <div className="relative ">
+                        <div className="z-[25] absolute top-0 w-40 h-40  sm:flex sm:flex-col items-center ">
+                            <div className="bg-[url('/images/Shapes/shape-4.png')] text-center bg-no-repeat bg-cover w-40 h-40  rounded-full border-bodycolor border-[5px] border-solid p-4 absolute -z-10"></div>
+                            <div className="bg-[url('/images/Shapes/shape-5.png')] absolute bg-no-repeat h-16 w-32 bottom-[16px] left-4">
+                            </div>
+                            <div className="absolute text-center top-10 left-4">
+                                <p className="pt-2 text-sm">
+                                    Years of experiance
+                                </p>
+
+                                <h2 className="text-[55px] leading-[60px] font-Inter font-[700]">15</h2>
+                            </div>
+                        </div>
+                        <div className="relative flex items-center mr-[64px]">
+                            {aboutimages.map((src, index) => (
+                                <div className={`mr-[-79px] relative   ${zOrder[index]}`} key={index}>
+                                    <img className="object-cover border-bodycolor border-[5px] border-solid rounded-[240px] relative inline-block max-w-full h-auto" src={src} alt="img" />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className=" relative flex items-center justify-start h-4/5 w-4/5 lg:h-full lg:w-[50%] rounded-lg mr-10 md:mr-20">
-            <div className="z-[25] absolute -top-6 w-40 h-40 hidden sm:flex sm:flex-col items-center ">
-                <div className="bg-[url('/images/Shapes/shape-4.png')] text-center bg-no-repeat bg-cover w-40 h-40  rounded-full border-bodycolor border-[5px] border-solid p-4 absolute -z-10"></div>
-                <div className="bg-[url('/images/Shapes/shape-5.png')] absolute bg-no-repeat h-16 w-32 bottom-3 left-4">
-                </div>
-                <div className="absolute  left-5 top-8 text-center">
-                 <p className="pt-2 text-sm">
-                    Years of experiance
-                    </p> 
-                    <h2 className="text-6xl">15</h2>
-                </div>
-                    </div> 
-                {aboutimages.map((src,index) => (
-                    <div className={`-mr-16  lg:-mr-20 relative   ${zOrder[index]}`} key={index}>
-                    <img className="object-cover border-black border-[5px] border-solid rounded-t-full rounded-b-full" src={src} alt="img" />
-                </div>
-                ))}
-            </div>
-                </div>
-            
+
         </section>
     )
 }
 
 
 
-  
+//    <div className="z-[25] absolute top-0 w-40 h-40 hidden sm:flex sm:flex-col items-center ">
+//                 <div className="bg-[url('/images/Shapes/shape-4.png')] text-center bg-no-repeat bg-cover w-40 h-40  rounded-full border-bodycolor border-[5px] border-solid p-4 absolute -z-10"></div>
+//                 <div className="bg-[url('/images/Shapes/shape-5.png')] absolute bg-no-repeat h-16 w-32 bottom-3 left-4">
+//                 </div>
+//                 <div className="absolute  left-5 top-8 text-center">
+//                  <p className="pt-2 text-sm">
+//                     Years of experiance
+//                     </p>
+//                     <h2 className="text-6xl">15</h2>
+//                 </div>
+//                     </div> 

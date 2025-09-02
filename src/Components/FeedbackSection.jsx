@@ -1,79 +1,78 @@
-import Slider from "react-slick"
+import { Swiper, SwiperSlide } from "swiper/react"
 import feedback from "../assets/data/Feedback.json"
+
 
 export const FeedbackSection = () => {
 
-    const Settings = {
-        dots: false,
-        infinite: true,
-        speed: 1000,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 3000,
-        arrows: false,
-        pauseOnHover: true,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }
-        ],
-    }
+    return (
+        <section className="relative pt-[70px] pb-[40px] md:pt-[120px] md:pb-[90px] ">
 
-    return(
-        <section className="relative">
-            <div className="max-w-[1456px] mx-auto px-8">
+            <div className="bg-[url('/images/Shapes/shape-11.png')] absolute bg-no-repeat bg-center bg-cover w-full h-full left-0 top-0 ">
+            </div>
+            <div className="bg-[url('/images/Shapes/shape-14.png')] absolute bg-no-repeat left-0 top-[-235px] md:w-[737px] h-[1290px] "></div>
+            <div className="max-w-[1350px] w-full  mx-auto px-[15px]">
+                <div className="relative flex-col lg:flex lg:flex-row  items-end justify-between mb-[60px]">
+                    <div className="relative block">
+                        <h3 className="relative  font-ambit text-[24px] leading-[36px] text-[#b5b5b5] font-[400] mb-[24px]">Our Client Feedback</h3>
+                        <h2 className="text-[34px] leading-[42px] md:text-[50px] text-[#fff] md:leading-[58px] font-[400] font-ambit">
+                            {"Our Testimonial "}
+                            <br className="hidden lg:block" />
+                            <span className="gradient-text  relative font-[700]">Project</span>
+                        </h2>
+                    </div>
+                    <p className="relative font-Inter max-w-[532px] font-[400] text-[#b0b0b0]">Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio possimus.</p>
+                </div>
+                <div className="relative overflow-hidden">
+                    <Swiper
+                        spaceBetween={20}
+                        slidesPerView={2}
+                        speed={1000}
+                        loop={true}
+                        autoplay={false} // set to { delay: 3000 } if you want autoplay
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1,
+                            },
+                            899: {
+                                slidesPerView: 2,
+                            },
+                        }}
+                    >
+                        {feedback.map(({ id, Name, Post, Discription, src, src2 }) => (
+                            <SwiperSlide key={id}>
+                                <div className="relative block cursor-move px-[32px] pt-[29px] pb-[32px] mb-[30px] text-center group z-10">
+                                    {/* Shape background */}
+                                    <div className="bg-[url('/images/Shapes/shape-12.png')] bg-cover h-full w-full bg-no-repeat bg-center  left-0 top-0 transition-opacity duration-500 group-hover:opacity-0 absolute rounded-[32px]"></div>
+                                    <div className="bg-[url('/images/Shapes/shape-13.png')] transition-opacity duration-500 opacity-0 group-hover:opacity-100 bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full absolute rounded-[32px] "></div>
+                                    {/* Content */}
+                                    
+                                        <div className="relative inline-block min-h-[33px] mb-[53px]">
+                                            <img src={src} alt="img" className="w-full" />
+                                        </div>
 
-            <div className="bg-[url('/images/Shapes/shape-11.png')] z-0 absolute bg-no-repeat bg-center bg-cover inset-0">
-            </div>
-            <div className="bg-[url('/images/Shapes/shape-14.png')] z-10 absolute bg-no-repeat bg-center left-0 top-0 w-full md:w-[737px] h-full opacity-75"></div>
-            <div className="relative z-20  ">
-            <div className="mb-7">
-                <div className="text-white">
-                    <h3 className="text-3xl opacity-50 text-font">Our Client Feedback</h3>
-                    <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl my-4">
-                        {"Our Testimonial "}
-                        <br />
-                        <span className="gradient-text">Project</span>
-                    </h2>
+                                        <p className="text-[#b5b5b5] text-[24px] leading-[32px] mb-[26px] font-ambit relative">
+                                            {Discription}
+                                        </p>
+
+                                        <div className="relative flex items-center justify-center gap-[18px] text-left">
+                                            <div className="w-[73px] h-[73px] inline-block rounded-[50%] relative">
+                                                <img
+                                                    src={src2}
+                                                    alt="img"
+                                                    className="w-full  rounded-[50%]"
+                                                />
+                                            </div>
+                                            <div className="flex flex-col">
+                                                <h3 className="font-[700] mb-[5px] text-[18px] leading-[25px] text-[#fff] font-ambit">{Name}</h3>
+                                                <span className="font-Inter relative block text-[14px] leading-[24px] text-[#b0b0b0] font-[500]">{Post}</span>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
-                <div className="text-[#fff] opacity-50 max-w-2xl "><p className="text-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem velit adipisci iusto nihil cumque distinctio consectetur incidunt sequi illo, repellat sed quas vero doloribus voluptate inventore asperiores et! A!</p></div>
-            </div>
-        </div>
-            <div className="relative w-full z-20 ">
-                <Slider {...Settings}>
-                {feedback.map(({id,Name,Post,Discription,src,src2})=>{
-                    return(
-                        <div key={id} className="flex  items-center justify-center relative p-4 group cursor-move rounded-3xl shadow-lg ">
-                    <div className="bg-[url('/images/Shapes/shape-12.png')] bg-cover h-full w-full bg-no-repeat bg-center rounded-[32px] left-0 top-0 transition-opacity duration-300 group-hover:opacity-0 absolute ">
-                    </div>
-                    <div className="bg-[url('/images/Shapes/shape-13.png')] transition-opacity duration-300 opacity-0 group-hover:opacity-100  bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full absolute  rounded-[32px]">
-                    </div>
-                    <div className="flex flex-col items-center justify-center overflow-hidden">
-                    <div className="mb-6 relative inline-block min-h-[33px] ">
-                        <img src={src} alt="img" className="w-full" />
-                    </div>
-                    <p className="text-[#b5b5b5] text-lg md:text-xl lg:text-2xl relative text-center mt-6 max-w-xl leading-relaxed text-font">
-                        {Discription}
-                    </p>
-                    <div className="relative text-[#fff] flex mt-8 items-center justify-center gap-4">
-                        <div className="w-[73px] h-[73px]">
-                        <img src={src2} alt="img" className="w-full object-cover rounded-full" />
-                        </div>
-                        <div className="flex flex-col">
-                            <h3 className="font-Outfit  text-lg">{Name}</h3>
-                            <span className="text-sm text-[#b0b0b0] text-font">{Post}</span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                )})}
-                </Slider>
-            </div>
 
             </div>
         </section>
