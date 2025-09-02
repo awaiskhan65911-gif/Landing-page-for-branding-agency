@@ -38,7 +38,7 @@ export const PricingSection = (IconVarient) => {
                                         <p className="text-[#95989b] font-Inter font-[400] mb-[32px] group-hover:text-white text-center tracking-wide">{Discription}</p>
                                     
                                     <h2 className="text-[#464b51] font-ambit text-[50px] leading-[58px] inline-block relative font-[700] mb-[32px] pr-[62px] group-hover:text-white">
-                                        {Price} <span className="absolute top-[-17px] right-0 text-[18px] text-[#95989b] font-[600]">/$Mo</span>
+                                        {Price} <span className="absolute top-[-17px] right-0 text-[18px] text-[#95989b] font-[600] group-hover:text-white">/$Mo</span>
                                     </h2>
                                     <Button id='pricebtn' IconVarient={IconVarient}>Chose A Option</Button>
                                 </div>
