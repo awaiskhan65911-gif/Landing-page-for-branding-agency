@@ -3,7 +3,7 @@ import { CiMail, CiPhone } from "react-icons/ci"
 import { FaLinkedin } from "react-icons/fa6"
 import { GrInstagram } from "react-icons/gr"
 import { HiOutlineLocationMarker } from "react-icons/hi"
-import { MdOutlineFacebook, MdOutlineLocationOn } from "react-icons/md"
+import { MdOutlineFacebook} from "react-icons/md"
 
 export const FooterSection = () => {
     const company = ["Home", "About Us", "Our Services", "Project & Portfolio", "Contact Us"]
@@ -69,7 +69,6 @@ export const FooterSection = () => {
                                 </div>
                                 <div className="flex flex-col shrink-0 grow-0 basis-auto w-full sm:w-[50%] md:w-2/6 px-[12px]">
                                     <div>
-
                                         <div className="mb-[21px] relative block">
                                             <h5 className="text-[22px] leading-[29px] text-[#fff] font-ambit font-[700]">Our Services</h5>
                                         </div>
@@ -83,8 +82,8 @@ export const FooterSection = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="flex flex-col shrink-0 grow-0 basis-auto w-full sm:w-[50%] md:w-2/6 px-[12px]">
-                                    <div className="-ml-[20px]">
+                                <div className="flex flex-col shrink-0 grow-0 basis-auto w-full sm:w-[50%] md:w-2/6 px-[12px] ">
+                                    <div className="">
                                         <div className="mb-[21px] relative block">
                                             <h3 className="relative text-[22px] leading-[29px] text-[#fff] font-ambit font-[700]">Contact Info</h3>
                                         </div>
