@@ -55,7 +55,7 @@ export const NavSection = () => {
             </nav>
             </div>
             <div className={`transition-all duration-500 z-40 border-b-[1px]  border-solid border-[#ffffff1a] fixed left-0 top-0 w-full bg-fixnavbgcolor ${scrolled ? "opacity-100 " : "opacity-0 pointer-events-none"}`}>   
-                <nav className="relative left-0 top-0 shadow-xl hidden lg:flex justify-between z-30 w-full max-w-[1430px] p-6 mx-auto  container">
+                <nav className="relative left-0 top-0  hidden lg:flex justify-between z-30 w-full max-w-[1430px] p-6 mx-auto  container">
                 <div>
                     <div className="items-center">
                         <a href="/">

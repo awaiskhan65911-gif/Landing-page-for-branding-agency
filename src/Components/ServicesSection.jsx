@@ -28,11 +28,11 @@ export const ServicesSection = (variant) => {
             <div className="w-full max-w-[1350px] mx-auto px-[15px] relative">
                 <div className="text-start lg:flex block items-center justify-between mb-[60px] relative">
                     <div className="relative block mb-[30px] lg:mb-0">
-                        <h3 className="relative block text-[24px] leading-[36px] font-[400] mb-[24px] text-font text-[#b5b5b5]">Brand Services</h3>
-                        <h2 className="text-[#fff] text-[34px] md:text-[50px] leading-[42px] md:leading-[58px] font-[550] font-ambit">
-                            <span className="bg-[linear-gradient(90deg,#4bb6ef_16.75%,#dd933e_50.1%,#dd933e_50.1%,#d82e5a_138.04%)] bg-clip-text text-transparent">We Create To Brands And</span>
+                        <h3 className="relative block text-[24px] leading-[36px] font-[400] mb-[24px] font-ambit text-[#b5b5b5]">Brand Services</h3>
+                        <h2 className="text-[#fff] text-[34px] md:text-[50px] leading-[42px] md:leading-[58px] font-[400] font-ambit">
+                            <span className="bg-[linear-gradient(90deg,#4bb6ef_16.75%,#dd933e_50.1%,#dd933e_50.1%,#d82e5a_138.04%)] bg-clip-text text-transparent font-[700]">We Create to Brands And</span>
                             <br />
-                            <span className="bg-[linear-gradient(90deg,#4bb6ef_16.75%,#dd933e_130.1%)] bg-clip-text text-transparent">Businesses</span>
+                            <span className="bg-[linear-gradient(90deg,#4bb6ef_16.75%,#dd933e_130.1%)] bg-clip-text text-transparent font-[700]">Businesses</span>
                             {" To Stand Our in"}
                             <br />
                             {" the Digital era"}
@@ -71,7 +71,7 @@ export const ServicesSection = (variant) => {
                                 slidesPerView: 3
                             },
                             1350: {
-                                slidesPerView: 3
+                                slidesPerView: 4
                             },
                         }}
                         onBreakpoint={(swiper) => {
@@ -87,12 +87,12 @@ export const ServicesSection = (variant) => {
                             const Icon = iconMap[icon];
                             return (
                                 <SwiperSlide key={id}>
-                                    <div className="relative block h-full p-[40px] rounded-[32px] overflow-hidden shadow-lg group mx-[12px] md:mr-[30px] bg-slidercolor z-30">
+                                    <div className="relative block h-full p-[40px] rounded-[32px] overflow-hidden shadow-lg group mx-[12px] md:mx-0 md:mr-[30px] bg-slidercolor z-30">
                                         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-linear SliderGradient scale-90 group-hover:scale-150 "></div>
                                         <div className="bg-[url('/images/Shapes/shape-6.png')] bg-cover bg-no-repeat bg-center left-0 top-0 w-full h-full"></div>
                                         <div className="relative ">
                                             {Icon && <Icon className="mb-[29px] text-[#fff]" size={40} />}
-                                            <h2 className="text-[30px] inline-block text-[#fff] leading-[36px] font-[500] mb-[16px]">{Title}</h2>
+                                            <h2 className="text-[30px] inline-block text-[#fff] leading-[36px] font-[500] mb-[16px] font-ambit">{Title}</h2>
                                             <p className="text-font text-[#b0b0b0] group-hover:text-[#e6e6e6] mb-[41px]">{Discripton}</p>
                                             <div className="my-4">
                                                 <a

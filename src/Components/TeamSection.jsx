@@ -41,7 +41,7 @@ export const TeamSection = () => {
                                 '>
                                     <img src={src} alt="img" className="rounded-[32px] w-full h-full pt-[2px] px-[2px]" />
                                 </div>
-                                <div className="bg-[#161b2299] px-[24px] py-[21.5px] text-[#fff]  group-hover:bg-[#fff6] backdrop-blur-[20px] absolute  left-0 bottom-0 w-full rounded-b-[32px] flex items-center justify-between transition-all duration-500 z-20">
+                                <div className="bg-[#161b2299] px-[24px] py-[19px] text-[#fff]  group-hover:bg-[#fff6] backdrop-blur-[20px] absolute  left-0 bottom-0 w-full rounded-b-[32px] flex items-center justify-between transition-all duration-500 z-20">
                                     <div className='text-start'>
                                     <div className="bg-['url(/images/Shapes/shape-17.png')] h-full w-full  bg-cover bg-no-repeat bg-center left-0 top-0 absolute -z-10">
                                     </div>

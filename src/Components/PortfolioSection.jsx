@@ -18,7 +18,7 @@ export const PortfolioSection = () => {
                     {portfoliodata.map(({Title,src,id})=>{
                         return(<div key={id} className={`border-[1px] bg-[#11161c3d] border-[#333333] border-solid basis-auto rounded-3xl grow flex-shrink-0 mt-4 xl:mt-0 ${id === 1 || id === 4 ? 'w-full lg:w-4/12':'w-full  lg:w-6/12'} `}>
                         <div className="pt-8 px-8 pb-7  border-b-[1px] border-[#333333] border-solid z-[4]">
-                            <h3 className="text-white text-[23px] leading-[30px] sm:text-[30px] sm:leading-[39px] font-[600] mb-[16px] hover:underline"> <a href="/">{Title}</a></h3>
+                            <h3 className="text-white text-[23px] leading-[30px] sm:text-[30px] sm:leading-[39px] font-[600] mb-[16px] font-ambit hover:underline"> <a href="/">{Title}</a></h3>
                             <a
                                 href="/"
                                 className="text-[16px] leading-[24px] font-[500] inline-flex items-center gap-[14px] text-[#b5b5b5] text-lg text-center hover:text-white transition-all duration-500 "
