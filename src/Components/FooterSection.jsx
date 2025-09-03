@@ -114,10 +114,10 @@ export const FooterSection = () => {
                                 Copyright © 2025  by <a href="#" className="text-[#fff] inline-block">bplugins</a>
                             </p>
                         </div>
-                        <ul className="relative justify-center flex items-center md:justify-normal gap-[58px]">
-                            <li className="relative inline-block text-[#b0b0b0]">Teams Of Services</li>
-                            <li className="relative inline-block text-[#b0b0b0]">Privacy Policy</li>
-                            <li className="relative inline-block text-[#b0b0b0]">Cooke Policy</li>
+                        <ul className="relative justify-center flex items-center md:justify-normal gap-[58px] font-ambit">
+                            <li className="relative inline-block text-[#b0b0b0] text-[15px] leading-[23px] ">Teams Of Services</li>
+                            <li className="relative inline-block text-[#b0b0b0] text-[15px] leading-[23px] ">Privacy Policy</li>
+                            <li className="relative inline-block text-[#b0b0b0] text-[15px] leading-[23px] ">Cooke Policy</li>
                         </ul>
                     </div>
                 </div>

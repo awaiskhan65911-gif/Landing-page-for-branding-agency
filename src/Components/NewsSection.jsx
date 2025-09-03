@@ -31,9 +31,9 @@ export const NewsSection = (variant) => {
                                     </div>
                                 </div>
                                 <div className='p-[24px]'>
-                                    <ul className='flex relative  items-center lg:gap-[15px] mb-[16px]'>
+                                    <ul className='flex relative  items-center 2xl:gap-[15px] mb-[16px]'>
                                         {Tag.map((item, index) => (
-                                            <li key={index} className='relative inline-block mb-[10px]'>
+                                            <li key={index} className='relative inline-block mb-[10px] 2xl:mb-0'>
                                                 <a href="" className='inline-block text-[12px] leading-[15px] text-[#8a8a8a] border-solid border-[1px] border-[#333333] rounded-[24px] py-[5px] px-[9px] font-ambit'>{item}</a></li>
                                         ))}
                                     </ul>
@@ -47,7 +47,7 @@ export const NewsSection = (variant) => {
                     })}
                 </div>
                 <div className='pt-[30px] text-center'>
-                    <Button variant={variant}>See All Blogs</Button>
+                    <Button variant={variant}>See All Blog</Button>
                 </div>
             </div>
         </section>

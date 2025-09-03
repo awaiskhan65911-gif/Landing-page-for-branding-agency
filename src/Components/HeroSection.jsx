@@ -24,7 +24,7 @@ export const HeroSection = (variant) => {
         speed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 5000,
         arrows: false,
         pauseOnHover: true,
@@ -77,11 +77,11 @@ export const HeroSection = (variant) => {
                 <div className="text-white flex flex-col items-center text-center">
                     <div className="bg-[url(/images/Shapes/shape-2.png)] bg-no-repeat absolute h-80 w-56 left-[216px] top-[180px] hidden lg:block">
                     </div>
-                    <h1 className="text-3xl text-[50px] leading-[60px] lg:text-[70px] lg:leading-[80px] mb-6 font-ambit font-[900]">
+                    <h1 className="text-3xl text-[50px] leading-[60px] md:text-[70px] md:leading-[80px] mb-6 font-ambit font-[900]">
                         {"Rediscover the Art of "}<br /> <span className="gradient-text">Branding</span>
                         {" with a Retro Vibe!"}
                     </h1>
-                    <p className="mb-[40px] text-[#b5b5b5] text-[18px] leading-[25px] text-font">Creating products with a strong identity. We provide brilliant ideas and <br /> adding the world called success brand. </p>
+                    <p className="mb-[40px] text-[#b5b5b5] text-[18px] leading-[25px] font-Inter tracking-wider font-[500]">Creating products with a strong identity. We provide brilliant ideas and <br /> adding the world called success brand. </p>
                 </div>
                 <div className="mb-20">
                     <Button variant={variant}  >Discover More</Button>

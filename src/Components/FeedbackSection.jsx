@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay } from "swiper/modules";
 import feedback from "../assets/data/Feedback.json"
-
+import "swiper/css";
 
 export const FeedbackSection = () => {
 
@@ -28,53 +29,57 @@ export const FeedbackSection = () => {
                         slidesPerView={2}
                         speed={1000}
                         loop={true}
-                        autoplay={false} // set to { delay: 3000 } if you want autoplay
-                        breakpoints={{
+                        autoplay={{
+                            delay: 3000, 
+                            disableOnInteraction: false,
+                        }} 
+                            breakpoints={{
                             0: {
-                                slidesPerView: 1,
+                        slidesPerView: 1,
                             },
-                            899: {
-                                slidesPerView: 2,
+                    899: {
+                        slidesPerView: 2,
                             },
                         }}
+                        modules={[Autoplay]}
                     >
-                        {feedback.map(({ id, Name, Post, Discription, src, src2 }) => (
-                            <SwiperSlide key={id}>
-                                <div className="relative block cursor-move px-[32px] pt-[29px] pb-[32px] mb-[30px] text-center group z-10">
-                                    {/* Shape background */}
-                                    <div className="bg-[url('/images/Shapes/shape-12.png')] bg-cover h-full w-full bg-no-repeat bg-center  left-0 top-0 transition-opacity duration-500 group-hover:opacity-0 absolute rounded-[32px]"></div>
-                                    <div className="bg-[url('/images/Shapes/shape-13.png')] transition-opacity duration-500 opacity-0 group-hover:opacity-100 bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full absolute rounded-[32px] "></div>
-                                    {/* Content */}
-                                    
-                                        <div className="relative inline-block min-h-[33px] mb-[53px]">
-                                            <img src={src} alt="img" className="w-full" />
-                                        </div>
+                    {feedback.map(({ id, Name, Post, Discription, src, src2 }) => (
+                        <SwiperSlide key={id}>
+                            <div className="relative block cursor-move px-[32px] pt-[29px] pb-[32px] mb-[30px] text-center group z-10">
+                                {/* Shape background */}
+                                <div className="bg-[url('/images/Shapes/shape-12.png')] bg-cover h-full w-full bg-no-repeat bg-center  left-0 top-0 transition-opacity duration-500 group-hover:opacity-0 absolute rounded-[32px]"></div>
+                                <div className="bg-[url('/images/Shapes/shape-13.png')] transition-opacity duration-500 opacity-0 group-hover:opacity-100 bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full absolute rounded-[32px] "></div>
+                                {/* Content */}
 
-                                        <p className="text-[#b5b5b5] text-[24px] leading-[32px] mb-[26px] font-ambit relative">
-                                            {Discription}
-                                        </p>
-
-                                        <div className="relative flex items-center justify-center gap-[18px] text-left">
-                                            <div className="w-[73px] h-[73px] inline-block rounded-[50%] relative">
-                                                <img
-                                                    src={src2}
-                                                    alt="img"
-                                                    className="w-full  rounded-[50%]"
-                                                />
-                                            </div>
-                                            <div className="flex flex-col">
-                                                <h3 className="font-[700] mb-[5px] text-[18px] leading-[25px] text-[#fff] font-ambit">{Name}</h3>
-                                                <span className="font-Inter relative block text-[14px] leading-[24px] text-[#b0b0b0] font-[500]">{Post}</span>
-                                            </div>
-                                        </div>
-                                    
+                                <div className="relative inline-block min-h-[33px] mb-[53px]">
+                                    <img src={src} alt="img" className="w-full" />
                                 </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                </div>
 
+                                <p className="text-[#b5b5b5] text-[24px] leading-[32px] mb-[26px] font-ambit relative">
+                                    {Discription}
+                                </p>
+
+                                <div className="relative flex items-center justify-center gap-[18px] text-left">
+                                    <div className="w-[73px] h-[73px] inline-block rounded-[50%] relative">
+                                        <img
+                                            src={src2}
+                                            alt="img"
+                                            className="w-full  rounded-[50%]"
+                                        />
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <h3 className="font-[700] mb-[5px] text-[18px] leading-[25px] text-[#fff] font-ambit">{Name}</h3>
+                                        <span className="font-Inter relative block text-[14px] leading-[24px] text-[#b0b0b0] font-[500]">{Post}</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
-        </section>
+
+        </div>
+        </section >
     )
 }

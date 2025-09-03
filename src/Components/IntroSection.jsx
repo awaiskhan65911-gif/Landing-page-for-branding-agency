@@ -7,13 +7,13 @@ export const IntroSection = () => {
             <div className="relative max-w-[1130px] mx-auto lg:px-[15px]">
                 <div className="flex items-start lg:justify-between flex-wrap  md:gap-0">
                     {intro.map((elem) => (
-                        <div key={elem.id} className="px-[12px] group relative text-center md:text-left w-full md:w-[50%] lg:w-1/3">
-                            <div className="decorate hidden opacity-20 group-hover:opacity-100 lg:block transition-all duration-300 ease-in-out"></div>
+                        <div key={elem.id} className="px-[12px] group relative text-center md:text-left w-full md:w-[50%] lg:w-2/6">
+                            <div className="decorate hidden opacity-20 group-hover:opacity-100 lg:block transition-all duration-300 ease-in-out md:max-w-[320px]"></div>
                             <div className="mb-[30px] block relative bottom-5 md:max-w-[320px]">
-                                <h3 className="font-[600] font-ambit text-[25px] leading-[33px] mb-[24px] group-hover:underline text-[#fff]">
+                                <h3 className="font-[600] font-ambit text-[22px]  leading-[33px] mb-[24px] group-hover:underline text-[#fff]">
                                     <a href="/">{elem.Title}</a>
                                 </h3>
-                                <p className="text-font text-[#B0B0B0]">{elem.Discripton}</p>
+                                <p className="font-Inter font-[400] tracking-wide text-[#B0B0B0]">{elem.Discripton}</p>
                             </div>
                         </div>
                     ))}

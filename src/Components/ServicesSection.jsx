@@ -71,10 +71,10 @@ export const ServicesSection = (variant) => {
                                 slidesPerView: 3
                             },
                             1350: {
-                                slidesPerView: 4
+                                slidesPerView: 3
                             },
                         }}
-                        onBreakpoint={(swiper, breakpointParams) => {
+                        onBreakpoint={(swiper) => {
                             if (window.innerWidth >= 1450) {
                                 swiper.params.speed = 0;   // 🚀 disable animation
                             } else {

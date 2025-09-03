@@ -24,15 +24,8 @@
 
 
 
-/* section{
-  @apply  py-28
-} */
-.text-font{
-  @apply font-Inter
-}
-h2{
-  @apply font-ambit
-}
+
+
 .gradient-text{
   @apply text-theme bg-clip-text text-transparent
 }

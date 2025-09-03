@@ -8,7 +8,7 @@ export const Button = ({children, id, className, variant = 'primary', IconVarien
     return (
         <button  id={id} className={`${className} h-[48px] text-font rounded-t-full rounded-b-full text-white gradient-color  ${id ? 'w-full':'max-w-[210px]'}`}>
                 <a className={`flex items-center justify-between gap-[15px] ${btnClass}`} href="/">
-                    <span className="font-Inter tracking-wider">
+                    <span className="font-Inter tracking-wide text-[16] leading-[24px] font-[500]">
                         {children}
                     </span>
                     <div className={`w-[28px] h-[28px] flex items-center justify-center rounded-full bg-white text-[#dd933e] ${iconClass}`}>

@@ -14,7 +14,7 @@ export const CTASection = (variant,className) =>{
                     <div className="flex-none flex flex-col sm:flex sm:flex-row gap-[20px]">
                         <Button className='w-[160px]'>Let's Talk</Button>
                         <Button variant={variant}
-                        className='w-[160px]'>Book now</Button>
+                        className='w-[161px]'>Book Now</Button>
                     </div>
                 </div>
             </div>
