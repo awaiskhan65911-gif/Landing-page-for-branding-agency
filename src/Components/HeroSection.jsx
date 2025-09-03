@@ -21,21 +21,24 @@ export const HeroSection = (variant) => {
     const sliderSettings = {
         dots: true,
         infinite: true,
-        speed: 3000,
+        speed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
         arrows: false,
+        centerMode:true,
+        centerPadding:"0",
         pauseOnHover: true,
         customPaging: i => (
-            <div className=" w-[9px] h-[9px] relative cursor-pointer  rounded-full transition-all duration-300 z-0 mx-[11px]  bg-white">
+            <div className=" w-[9px] h-[9px] relative  cursor-pointer hidden md:block rounded-full transition-all duration-300 z-0 mx-[11px]  bg-white">
             </div>
         ),
  dotsClass: `
-        !flex flex-row items-center justify-center
-        rounded-full mt-[25px] mx-auto
-        bg-bodycolor max-w-[175px] h-[40px] rounded-[100px]
+ !flex flex-row items-center justify-center
+ rounded-full mt-0 md:mt-[25px] mx-auto
+ bg-bodycolor md:max-w-[175px] md:h-[40px] rounded-[100px]
+
   [&>li.slick-active>div]:before:content-[""]
   [&>li.slick-active>div]:before:absolute
   [&>li.slick-active>div]:before:w-[9px]
@@ -71,20 +74,20 @@ export const HeroSection = (variant) => {
 `
     };
     return (
-        <section className="relative flex items-center justify-center pt-[180px]  md:pt-[230px] pb-[80px] overflow-x-hidden">
+        <section className="relative flex items-center justify-center  pt-[180px]  md:pt-[230px] md:pb-[80px] pb-[80px] overflow-x-hidden">
             <div className="absolute bg-[url('/images/Shapes/shape-1.png')] bg-cover bg-center bg-no-repeat w-full h-full z-0 left-0 top-0" />
-            <div className="relative flex flex-col justify-center items-center w-full z-10 px-[15px] max-w-[1660px] mx-auto">
-                <div className="text-white flex flex-col items-center text-center">
-                    <div className="bg-[url(/images/Shapes/shape-2.png)] bg-no-repeat absolute h-80 w-56 left-[216px] top-[180px] hidden lg:block">
+            <div className="relative w-full px-[15px] max-w-[1660px] mx-auto">
+                <div className="text-white text-center mb-[80px] relative block">
+                    <div className="bg-[url(/images/Shapes/shape-2.png)] bg-no-repeat absolute h-80 w-56 left-[213px] top-[180px] hidden lg:block">
                     </div>
                     <h1 className="text-3xl text-[50px] leading-[60px] md:text-[70px] md:leading-[80px] mb-6 font-ambit font-[900]">
                         {"Rediscover the Art of "}<br /> <span className="gradient-text">Branding</span>
                         {" with a Retro Vibe!"}
                     </h1>
-                    <p className="mb-[40px] text-[#b5b5b5] text-[18px] leading-[25px] font-Inter tracking-wider font-[500]">Creating products with a strong identity. We provide brilliant ideas and <br /> adding the world called success brand. </p>
-                </div>
-                <div className="mb-20">
+                    <p className="mb-[40px] text-[#b5b5b5] text-[18px] leading-[25px] font-Inter tracking-wide font-[500]">Creating products with a strong identity. We provide brilliant ideas and <br /> adding the world called success brand. </p>
+                <div className="">
                     <Button variant={variant}  >Discover More</Button>
+                </div>
                 </div>
                 {/* <div className="text-[#fff] flex flex-col items-center justify-center mb-4">
                         <div className="mb-7 p-[1px] gradient-color rounded-t-full w-[230px] rounded-b-full text-white flex items-center justify-center">
@@ -101,22 +104,18 @@ export const HeroSection = (variant) => {
                         </div>
                         <p className="text-font text-2xl">Exelent <span className="gradient-color bg-clip-text text-transparent">40.00</span> Reviews</p>
                     </div> */}
-                <div className="flex flex-col items-center justify-center ">
-                    
-                    <div className="text-white text-center">
-                        <div className="mx-auto relative max-w-[1630px] flex items-center
-                        justify-center">
-                            <Slider className="w-full max-w-[320px] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[872px]" {...sliderSettings}>
+                <div className="overflow-hidden mx-auto relative  max-w-[1630px]"> 
+                    <div className="relative flex items-center justify-center">
+                            <Slider className="mx-auto w-full max-w-[872px]" {...sliderSettings}>
                                 {images.map((src, index) => (
-                                    <div key={index} className="flex items-center justify-center px-4">
+                                    <div key={index} className="relative flex items-center justify-center ">
                                         <div className="">
-                                            <img src={src} alt="img" className="w-full h-full object-cover rounded-[30px] sm:rounded-[50px] md:rounded-[70px] shadow-xl" />
+                                            <img src={src} alt="img" className="w-full h-auto inline-block rounded-[70px]" />
                                         </div>
                                     </div>
                                 ))}
                             </Slider>
-                        </div>
-                    </div>
+                                </div>
                 </div>
             </div>
         </section>
