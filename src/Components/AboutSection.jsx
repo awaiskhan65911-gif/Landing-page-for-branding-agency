@@ -40,7 +40,7 @@ export const AboutSection = (variant) => {
                             <div className="bg-[url('/images/Shapes/shape-4.png')] text-center bg-no-repeat bg-cover w-40 h-40  rounded-full border-bodycolor border-[5px] border-solid p-4 absolute -z-10"></div>
                             <div className="bg-[url('/images/Shapes/shape-5.png')] absolute bg-no-repeat h-16 w-32 bottom-[16px] left-4">
                             </div>
-                            <div className="absolute text-center top-[10px] left-[px]">
+                            <div className="absolute text-center top-[10px] left-[10px]">
                                 <span class="curved-text relative inline-block h-[4.27183em] w-[9.78994em] text-[14px] leading-[20px] font-[500]">
                                     <span class="absolute bottom-auto left-[50%] translate-x-[-0.304688em] rotate-[-73.3476deg] origin-[center_5em]">Y</span>
                                     <span class="absolute bottom-auto left-[50%] translate-x-[-0.299107em] rotate-[-63.661deg] origin-[center_5em]">e</span>
@@ -63,7 +63,7 @@ export const AboutSection = (variant) => {
                                     <span class="absolute bottom-auto left-[50%] translate-x-[-0.294085em] rotate-[73.5176deg] origin-[center_5em]">e</span>
                                 </span>
                             </div>
-                            <div className="relative top-[50px]">
+                            <div className="relative text-center  top-[50px]">
                                 <h2 className="text-[55px] leading-[60px] font-Inter font-[700]">15</h2>
                             </div>
                         </div>
