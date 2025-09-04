@@ -1,6 +1,5 @@
-import news from '../assets/data/News.json'
+import {news} from '../utils/Constant'
 import { Button } from './Buttons/Button'
-
 
 export const NewsSection = (variant) => {
 

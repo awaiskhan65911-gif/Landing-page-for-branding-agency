@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay } from "swiper/modules";
-import feedback from "../assets/data/Feedback.json"
+import {feedback} from "../utils/Constant"
 import "swiper/css";
 
 export const FeedbackSection = () => {
@@ -44,13 +44,12 @@ export const FeedbackSection = () => {
                         modules={[Autoplay]}
                     >
                     {feedback.map(({ id, Name, Post, Discription, src, src2 }) => (
-                        <SwiperSlide key={id}>
-                            <div className="relative block cursor-move px-[32px] pt-[29px] pb-[32px] mb-[30px] text-center group z-10">
+                        <SwiperSlide >
+                            <div key={id} className="relative block cursor-move px-[32px] pt-[29px] pb-[32px] mb-[30px] text-center group z-10">
                                 {/* Shape background */}
                                 <div className="bg-[url('/images/Shapes/shape-12.png')] bg-cover h-full w-full bg-no-repeat bg-center  left-0 top-0 transition-opacity duration-500 group-hover:opacity-0 absolute rounded-[32px]"></div>
                                 <div className="bg-[url('/images/Shapes/shape-13.png')] transition-opacity duration-500 opacity-0 group-hover:opacity-100 bg-center bg-no-repeat bg-cover left-0 top-0 w-full h-full absolute rounded-[32px] "></div>
                                 {/* Content */}
-
                                 <div className="relative inline-block min-h-[33px] mb-[53px]">
                                     <img src={src} alt="img" className="w-full" />
                                 </div>

@@ -1,4 +1,4 @@
-import intro from "../assets/data/Introdata.json"
+import {intro} from "../utils/Constant"
 
 
 export const IntroSection = () => {

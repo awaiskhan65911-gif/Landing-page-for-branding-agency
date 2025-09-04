@@ -1,5 +1,5 @@
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md"
-import faq from "../assets/data/Faq.json"
+import {faq} from "../utils/Constant"
 import { useState } from "react"
 export const FaqSection = () =>{
 

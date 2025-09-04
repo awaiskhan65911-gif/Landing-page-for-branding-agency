@@ -1,5 +1,5 @@
 import { MdOutlineChevronRight } from "react-icons/md"
-import portfoliodata from "../assets/data/Portfolio.json"
+import {portfoliodata} from "../utils/Constant"
 export const PortfolioSection = () => {
     return (
         <section className="relative bg-[#1a1f25] pt-[70px] pb-[40px] md:pt-[120px] md:pb-[90px] z-0">

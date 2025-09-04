@@ -1,7 +1,7 @@
 import { IoFileTrayOutline } from "react-icons/io5";
 import { Button } from "./Buttons/Button";
 import { MdOutlineChevronRight, MdOutlineKeyboardDoubleArrowLeft, MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
-import services from "../assets/data/ServicesSlider.json";
+import {services} from "../utils/Constant";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { BiBulb } from "react-icons/bi";
 import { GoShieldCheck } from "react-icons/go";

@@ -1,5 +1,5 @@
 import { FaPlus } from 'react-icons/fa'
-import team from '../assets/data/Team.json'
+import {team} from '../utils/Constant'
 import { MdOutlineFacebook } from 'react-icons/md'
 import {  FaLinkedin } from 'react-icons/fa6'
 import { AiFillTwitterCircle } from 'react-icons/ai'

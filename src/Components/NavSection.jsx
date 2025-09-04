@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { RxCross1 } from "react-icons/rx"
 import { useEffect } from "react";
 import { Button } from "./Buttons/Button"
-import navData from "../assets/data/Nav.json"
+import {navData} from "../utils/Constant"
 import { FaChevronDown } from "react-icons/fa";
 
 export const NavSection = () => {

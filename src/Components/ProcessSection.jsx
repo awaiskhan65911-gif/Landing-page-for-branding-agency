@@ -1,5 +1,5 @@
 import { IoBulbOutline, IoSettingsOutline } from "react-icons/io5"
-import process from "../assets/data/Process.json"
+import {process} from "../utils/Constant"
 import { FaArrowsToCircle } from "react-icons/fa6";
 import { IoIosPeople } from "react-icons/io";
 export const ProcessSection = () => {

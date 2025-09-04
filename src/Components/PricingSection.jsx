@@ -1,6 +1,6 @@
 import { HiMiniSquare3Stack3D, HiOutlinePencilSquare } from "react-icons/hi2";
 import { IoBulbOutline } from "react-icons/io5";
-import pricing from "../assets/data/Pricing.json"
+import {pricing} from "../utils/Constant"
 import { Button } from "./Buttons/Button";
 export const PricingSection = (IconVarient) => {
     const iconMap = {
