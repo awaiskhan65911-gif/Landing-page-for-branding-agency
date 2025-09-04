@@ -106,10 +106,10 @@ export const FooterSection = () => {
                                                 {contact.map((item, index) => (
                                                     <li
                                                         key={index}
-                                                        className="relative flex items-center  font-ambit text-[14px] leading-[23px] mb-[20px] gap-[10px] text-[#b0b0b0] hover:text-[#fff] transition-all duration-500 cursor-pointer"
+                                                        className="relative flex items-center  font-ambit text-[14px] leading-[23px] mb-[20px] gap-[10px] text-[#b0b0b0]  cursor-pointer"
                                                     >
                                                         <a href="/" className="relative  min-w-[22px] text-[22px]">{item.icon}</a>
-                                                        <span>{item.text}</span>
+                                                        <span className="hover:text-[#fff] transition-all duration-500">{item.text}</span>
                                                     </li>
                                                 ))}
                                             </ul>
