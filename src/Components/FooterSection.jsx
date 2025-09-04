@@ -9,11 +9,11 @@ export const FooterSection = () => {
     const company = ["Home", "About Us", "Our Services", "Project & Portfolio", "Contact Us"]
     const contact = [
         {
-            icon: <HiOutlineLocationMarker />,
+            icon: <HiOutlineLocationMarker  />,
             text: "235 Park Ave S, New York, NY 10010 United States",
         },
         {
-            icon: <CiMail />,
+            icon: <CiMail  />,
             text: "Infobranding@gmail.com",
         },
         {
@@ -21,7 +21,7 @@ export const FooterSection = () => {
             text: "000 (123) 456 789",
         },
     ];
-    const icons = [<MdOutlineFacebook />, <GrInstagram />, <FaLinkedin />, <AiFillTwitterCircle />]
+    const icons = [<MdOutlineFacebook key="fb"/>, <GrInstagram key="ig"/>, <FaLinkedin key="ln"/>, <AiFillTwitterCircle key="tw"/>]
     const services = ["Consulting", "Community", "Brand Strategy", "Design", "Communication"]
     return (
         <section className="relative pt-[70px] md:pt-[120px]">
@@ -39,10 +39,22 @@ export const FooterSection = () => {
                             <h6 className="text-[#fff] block relative font-ambit text-[15px] leading-[17px] mb-[20px] font-[700]">
                                 Follow Us:
                             </h6>
-                            <ul className="relative flex items-center gap-x-[12px] text-[#b0b0b0]">
+                            <ul className="relative flex items-center gap-x-[12px] ">
                                 {icons.map((items, index) => {
                                     return (
-                                        <li key={index} className="relative inline-block"><a className="relative  w-[30px] h-[30px] leading-[30px] flex items-center justify-center border-[1px] border-solid border-[#95989B] rounded-full text-[12px]" href="">{items}</a></li>
+                                        <li key={index} className="relative inline-block"><a className="relative  w-[30px] h-[30px] leading-[30px] flex items-center justify-center border-[1px] border-solid border-[#95989B] hover:border-opacity-0  transition-all duration-500  rounded-full text-[12px] text-[#95989B] 
+                                        after:bg-[url('/images/Shapes/shape-29.png')]
+                                        after:absolute
+                                        after:bg-no-repeat 
+                                        after:bg-center
+                                        after:h-[28px]
+                                        after:w-[28px]
+                                        after:opacity-0
+                                        after:hover:opacity-100
+                                        after:hover:scale-[.99]
+                                        after:transition-all
+                                        after:duration-500
+                                        " href="">{items}</a></li>
                                     )
                                 })}
                             </ul>
