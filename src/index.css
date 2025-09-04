@@ -42,6 +42,9 @@
  .SliderGradient{
     @apply bg-gradient-to-r from-colorThemeSlider;
 }
+.curved-text{
+  @apply absolute bottom-auto left-[50%] origin-[center_5em]
+}
  .group:hover #pricebtn{
   background: white !important;
   color: #95989b !important;

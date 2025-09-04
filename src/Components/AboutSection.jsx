@@ -42,25 +42,25 @@ export const AboutSection = (variant) => {
                             </div>
                             <div className="absolute text-center top-[10px] left-[10px]">
                                 <span className="curved-text relative inline-block h-[4.27183em] w-[9.78994em] text-[14px] leading-[20px] font-[500]">
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.304688em] rotate-[-73.3476deg] origin-[center_5em]">Y</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.299107em] rotate-[-63.661deg] origin-[center_5em]">e</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.28404em] rotate-[-54.3057deg] origin-[center_5em]">a</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.193638em] rotate-[-46.6423deg] origin-[center_5em]">r</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.269531em] rotate-[-39.2118deg] origin-[center_5em]">s</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.133371em] rotate-[-32.7481deg] origin-[center_5em]">&nbsp;</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.383371em] rotate-[-24.4581deg] origin-[center_5em]">O</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.189732em] rotate-[-15.264deg] origin-[center_5em]">f</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.133371em] rotate-[-10.0805deg] origin-[center_5em]">&nbsp;</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.301897em] rotate-[-3.09755deg] origin-[center_5em]">E</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.279018em] rotate-[6.22196deg] origin-[center_5em]">x</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.309152em] rotate-[15.6579deg] origin-[center_5em]">p</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.294085em] rotate-[25.3355deg] origin-[center_5em]">e</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.197545em] rotate-[33.2226deg] origin-[center_5em]">r</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.126116em] rotate-[38.415deg] origin-[center_5em]">i</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.294085em] rotate-[45.1562deg] origin-[center_5em]">e</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.300781em] rotate-[54.6996deg] origin-[center_5em]">n</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.289062em] rotate-[64.1623deg] origin-[center_5em]">c</span>
-                                    <span className="absolute bottom-auto left-[50%] translate-x-[-0.294085em] rotate-[73.5176deg] origin-[center_5em]">e</span>
+                                    <span className="curved-text translate-x-[-0.304688em] rotate-[-73.3476deg] ">Y</span>
+                                    <span className="curved-text translate-x-[-0.299107em] rotate-[-63.661deg] ">e</span>
+                                    <span className="curved-text translate-x-[-0.28404em] rotate-[-54.3057deg] ">a</span>
+                                    <span className="curved-text translate-x-[-0.193638em] rotate-[-46.6423deg] ">r</span>
+                                    <span className="curved-text translate-x-[-0.269531em] rotate-[-39.2118deg] ">s</span>
+                                    <span className="curved-text translate-x-[-0.133371em] rotate-[-32.7481deg] ">&nbsp;</span>
+                                    <span className="curved-text translate-x-[-0.383371em] rotate-[-24.4581deg] ">O</span>
+                                    <span className="curved-text translate-x-[-0.189732em] rotate-[-15.264deg] ">f</span>
+                                    <span className="curved-text translate-x-[-0.133371em] rotate-[-10.0805deg] ">&nbsp;</span>
+                                    <span className="curved-text translate-x-[-0.301897em] rotate-[-3.09755deg] ">E</span>
+                                    <span className="curved-text translate-x-[-0.279018em] rotate-[6.22196deg] ">x</span>
+                                    <span className="curved-text translate-x-[-0.309152em] rotate-[15.6579deg] ">p</span>
+                                    <span className="curved-text translate-x-[-0.294085em] rotate-[25.3355deg] ">e</span>
+                                    <span className="curved-text translate-x-[-0.197545em] rotate-[33.2226deg] ">r</span>
+                                    <span className="curved-text translate-x-[-0.126116em] rotate-[38.415deg] ">i</span>
+                                    <span className="curved-text translate-x-[-0.294085em] rotate-[45.1562deg] ">e</span>
+                                    <span className="curved-text translate-x-[-0.300781em] rotate-[54.6996deg] ">n</span>
+                                    <span className="curved-text translate-x-[-0.289062em] rotate-[64.1623deg] ">c</span>
+                                    <span className="curved-text translate-x-[-0.294085em] rotate-[73.5176deg] ">e</span>
                                 </span>
                             </div>
                             <div className="relative text-center  top-[50px]">
