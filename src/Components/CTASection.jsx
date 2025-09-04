@@ -10,7 +10,7 @@ export const CTASection = (variant,className) =>{
                 </div>
                     <h3 className="text-[30px] leading-[35px] mb-[32px] font-ambit text-[#fff] font-[700]">Hire Now Branding Agency</h3>
                     <h2 className="text-[36px] leading-[44px] sm:text-[50px] sm:leading-[60px] md:text-[70px] md:leading-[81px] mb-[24px] font-ambit font-[700] text-[#fff]">Let’s Get In Touch.</h2>
-                    <p className="relative text-[17px] leading-[27px] font-ambit text-[#fff] font-[600] mb-[32px]">Your Laboratory Instruments Should Serve you. Not the other way <br />around. We’re happy to help you.</p>
+                    <p className="relative text-[18px] leading-[27px] font-ambit text-[#fff] font-[600] mb-[32px]  ">Your Laboratory Instruments Should Serve you. Not the other way <br />around. We’re happy to help you.</p>
                     <div className="flex-none flex flex-col sm:flex sm:flex-row gap-[20px]">
                         <Button className='w-[160px]'>Let's Talk</Button>
                         <Button variant={variant}
