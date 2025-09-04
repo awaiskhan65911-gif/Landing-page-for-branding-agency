@@ -81,17 +81,3 @@ export const AboutSection = (variant) => {
         </section>
     )
 }
-
-
-
-//    <div className="z-[25] absolute top-0 w-40 h-40 hidden sm:flex sm:flex-col items-center ">
-//                 <div className="bg-[url('/images/Shapes/shape-4.png')] text-center bg-no-repeat bg-cover w-40 h-40  rounded-full border-bodycolor border-[5px] border-solid p-4 absolute -z-10"></div>
-//                 <div className="bg-[url('/images/Shapes/shape-5.png')] absolute bg-no-repeat h-16 w-32 bottom-3 left-4">
-//                 </div>
-//                 <div className="absolute  left-5 top-8 text-center">
-//                  <p className="pt-2 text-sm">
-//                     Years of experiance
-//                     </p>
-//                     <h2 className="text-6xl">15</h2>
-//                 </div>
-//                     </div> 

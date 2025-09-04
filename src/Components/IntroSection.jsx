@@ -23,4 +23,3 @@ export const IntroSection = () => {
     )
 }
 
-// grid grid-cols-1 md:grid-cols-2 md:grid-rows-2  lg:grid-rows-1 lg:grid-cols-3
