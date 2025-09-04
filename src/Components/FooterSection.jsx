@@ -61,7 +61,7 @@ export const FooterSection = () => {
                                         <ul className="flex flex-col">
                                             {company.map((items, index) => {
                                                 return (
-                                                    <li key={index} className="relative block mb-[13px]"><a className="relative inline-block text-[15px] leading-[23px] text-[#b0b0b0] font-ambit" href="">{items}</a></li>
+                                                    <li key={index} className="relative block mb-[13px]"><a className="relative inline-block text-[15px] leading-[23px] text-[#b0b0b0] hover:text-[#fff] transition-all duration-500 font-ambit" href="">{items}</a></li>
                                                 )
                                             })}
                                         </ul>
@@ -76,7 +76,7 @@ export const FooterSection = () => {
                                             {services.map((items, index) => {
                                                 return (
 
-                                                    <li key={index} className="relative block mb-[13px]" ><a href="/" className="relative inline-block text-[15px] leading-[23px] text-[#b0b0b0] font-ambit">{items}</a></li>
+                                                    <li key={index} className="relative block mb-[13px]" ><a href="/" className="relative inline-block text-[15px] leading-[23px] text-[#b0b0b0] font-ambit hover:text-[#fff] transition-all duration-500">{items}</a></li>
                                                 )
                                             })}
                                         </ul>
@@ -92,7 +92,7 @@ export const FooterSection = () => {
                                                 {contact.map((item, index) => (
                                                     <li
                                                         key={index}
-                                                        className="relative flex items-center  font-ambit text-[14px] leading-[23px] mb-[20px] gap-[10px] text-[#b0b0b0]"
+                                                        className="relative flex items-center  font-ambit text-[14px] leading-[23px] mb-[20px] gap-[10px] text-[#b0b0b0] hover:text-[#fff] transition-all duration-500 cursor-pointer"
                                                     >
                                                         <a href="/" className="relative  min-w-[22px] text-[22px]">{item.icon}</a>
                                                         <span>{item.text}</span>
@@ -111,13 +111,13 @@ export const FooterSection = () => {
                     <div className="relative block text-center md:flex md:flex-row items-center justify-between">
                         <div className="mb-[15px] md:mb-0">
                             <p className="text-[15px] leading-[23px] font-ambit text-[#b0b0b0] font-[400]">
-                                Copyright © 2025  by <a href="#" className="text-[#fff] inline-block">bplugins</a>
+                                Copyright © 2025  by <a href="#" className="text-[#fff] inline-block hover:underline">bplugins</a>
                             </p>
                         </div>
                         <ul className="relative justify-center flex items-center md:justify-normal gap-[58px] font-ambit">
-                            <li className="relative inline-block text-[#b0b0b0] text-[15px] leading-[23px] ">Teams Of Services</li>
-                            <li className="relative inline-block text-[#b0b0b0] text-[15px] leading-[23px] ">Privacy Policy</li>
-                            <li className="relative inline-block text-[#b0b0b0] text-[15px] leading-[23px] ">Cooke Policy</li>
+                            <li className="relative inline-block text-[#b0b0b0] text-[15px] leading-[23px] hover:text-[#fff] transition-all duration-500 cursor-pointer">Teams Of Services</li>
+                            <li className="relative inline-block text-[#b0b0b0] text-[15px] leading-[23px] hover:text-[#fff] transition-all duration-500 cursor-pointer">Privacy Policy</li>
+                            <li className="relative inline-block text-[#b0b0b0] text-[15px] leading-[23px] hover:text-[#fff] transition-all duration-500 cursor-pointer">Cooke Policy</li>
                         </ul>
                     </div>
                 </div>
