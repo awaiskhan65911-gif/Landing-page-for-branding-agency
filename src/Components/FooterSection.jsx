@@ -1,9 +1,5 @@
-import { AiFillTwitterCircle } from "react-icons/ai"
 import { CiMail, CiPhone } from "react-icons/ci"
-import { FaLinkedin } from "react-icons/fa6"
-import { GrInstagram } from "react-icons/gr"
 import { HiOutlineLocationMarker } from "react-icons/hi"
-import { MdOutlineFacebook} from "react-icons/md"
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 
