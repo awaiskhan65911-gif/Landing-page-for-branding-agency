@@ -4,6 +4,8 @@ import { FaLinkedin } from "react-icons/fa6"
 import { GrInstagram } from "react-icons/gr"
 import { HiOutlineLocationMarker } from "react-icons/hi"
 import { MdOutlineFacebook} from "react-icons/md"
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 
 export const FooterSection = () => {
     const company = ["Home", "About Us", "Our Services", "Project & Portfolio", "Contact Us"]
@@ -21,7 +23,7 @@ export const FooterSection = () => {
             text: "000 (123) 456 789",
         },
     ];
-    const icons = [<MdOutlineFacebook key="fb"/>, <GrInstagram key="ig"/>, <FaLinkedin key="ln"/>, <AiFillTwitterCircle key="tw"/>]
+    const icons = [<i class="bi bi-facebook "></i>, <i class="bi bi-instagram"></i>, <i class="bi bi-linkedin"></i>, <i class="bi bi-twitter"></i>]
     const services = ["Consulting", "Community", "Brand Strategy", "Design", "Communication"]
     return (
         <section className="relative pt-[70px] md:pt-[120px]">
@@ -42,8 +44,8 @@ export const FooterSection = () => {
                             <ul className="relative flex items-center gap-x-[12px] ">
                                 {icons.map((items, index) => {
                                     return (
-                                        <li key={index} className="relative inline-block"><a className="relative  w-[30px] h-[30px] leading-[30px] flex items-center justify-center border-[1px] border-solid border-[#95989B] hover:border-opacity-0  transition-all duration-500  rounded-full text-[12px] text-[#95989B] 
-                                        after:bg-[url('/images/Shapes/shape-29.png')]
+                                        <li key={index} className="relative inline-block"><a className="relative  w-[30px] h-[30px] leading-[30px] flex  items-center justify-center border-[1px] border-solid border-[#95989B] hover:border-opacity-0  transition-all duration-500  rounded-full text-[11px] text-[#95989B] 
+                                        after:bg-[url('/images/Shapes/shape-29.png')] gradient-icon
                                         after:absolute
                                         after:bg-no-repeat 
                                         after:bg-center

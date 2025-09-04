@@ -30,6 +30,9 @@
 .gradient-text{
   @apply text-theme bg-clip-text text-transparent
 }
+.gradient-icon{
+  @apply hover:bg-[linear-gradient(90deg,#4bb6ef_40.75%,#dd933e_50.1%,#dd933e_50.1%,#d82e5a_138.04%)] hover:bg-clip-text hover:text-transparent transition-all duration-500
+}
 .text-theme{
   @apply bg-gradient-to-r from-gradientText
 }
